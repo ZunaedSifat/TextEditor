@@ -11,6 +11,9 @@ import java.io.IOException;
 
 public class SaveFile {
 
+    // todo: this code should have been placed in SaveFileAs. If I know which file I am editing,
+    // todo: I should not call this window. just save here. Unless known, call SaveFileAs
+
     public static void saveFile(Stage saveWindow) {
 
         FileChooser fileChooser = new FileChooser();

@@ -12,9 +12,7 @@ public class FileMenu {
     static {
 
         MenuItem newFile = new MenuItem("New File");
-        newFile.setOnAction(e -> {
-            NewFile.createNewFile();
-        });
+        newFile.setOnAction(e -> NewFile.createNewFile() );
 
         MenuItem openFile = new MenuItem("Open File");
         openFile.setOnAction(e -> {
@@ -27,9 +25,7 @@ public class FileMenu {
         });
 
         MenuItem saveFile = new MenuItem("Save File");
-        saveFile.setOnAction(e -> {
-            SaveFile.saveFile(new Stage());
-        });
+        saveFile.setOnAction(e -> SaveFile.saveFile(new Stage()) );
 
         MenuItem saveFileAs = new MenuItem("Save File As...");
         saveFileAs.setOnAction(e -> {
