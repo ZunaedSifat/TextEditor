@@ -3,7 +3,10 @@ package texteditor.file;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+
+import java.io.File;
 
 public class FileMenu {
 
@@ -15,9 +18,7 @@ public class FileMenu {
         newFile.setOnAction(e -> NewFile.createNewFile() );
 
         MenuItem openFile = new MenuItem("Open File");
-        openFile.setOnAction(e -> {
-            //todo: add fileSelector and open it.
-        });
+        openFile.setOnAction(e -> OpenFile.openFile());
 
         MenuItem openRecent = new MenuItem("Open Recent...");
         openRecent.setOnAction(e -> {
@@ -25,12 +26,10 @@ public class FileMenu {
         });
 
         MenuItem saveFile = new MenuItem("Save File");
-        saveFile.setOnAction(e -> SaveFile.saveFile(new Stage()) );
+        saveFile.setOnAction(e -> SaveFile.saveFile() );
 
         MenuItem saveFileAs = new MenuItem("Save File As...");
-        saveFileAs.setOnAction(e -> {
-            //todo: save file as action
-        });
+        saveFileAs.setOnAction(e -> SaveFIleAs.saveFileAs());
 
         MenuItem exitProgram = new MenuItem("Exit Program");
         exitProgram.setOnAction(e -> {
