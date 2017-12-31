@@ -78,10 +78,8 @@ public class JavaKeywordsAsync {
     });
 
     private CodeArea codeArea;
-    private ExecutorService executor;
 
     public CodeArea getCodeArea() {
-        executor = Executors.newSingleThreadExecutor();
         codeArea = new CodeArea();
         codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
         codeArea.richChanges()
@@ -112,7 +110,6 @@ public class JavaKeywordsAsync {
                 return computeHighlighting(text);
             }
         };
-        executor.execute(task);
         return task;
     }
 

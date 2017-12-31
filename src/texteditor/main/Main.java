@@ -2,12 +2,12 @@ package texteditor.main;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
 import org.fxmisc.richtext.CodeArea;
+import org.fxmisc.richtext.LineNumberFactory;
 
 public class Main extends Application{
 
@@ -29,10 +29,12 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        codeArea = (new JavaKeywordsAsync()).getCodeArea();
+        //codeArea = (new JavaKeywordsAsync()).getCodeArea();
+        codeArea = new CodeArea();
+        codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
 
         menuBar = new MenuBar();
-        menuBar.getMenus().add(texteditor.file.FileMenu.getMenu());
+        menuBar.getMenus().addAll(texteditor.file.FileMenu.getMenu());
 
         VBox layout = new VBox(10);
         layout.getChildren().addAll(menuBar, codeArea);

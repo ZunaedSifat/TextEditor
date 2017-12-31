@@ -8,7 +8,7 @@ public class NewFile {
     public static void createNewFile() {
 
         CodeArea codeArea = Main.getCodeArea();
-        codeArea.setAccessibleText("");
+        codeArea.clear();
         Main.setCodeArea(codeArea);
     }
 }
