@@ -1,14 +1,11 @@
 package texteditor.file;
 
-import org.fxmisc.richtext.CodeArea;
-import texteditor.main.Main;
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
 
 public class NewFile {
 
     public static void createNewFile() {
-
-        CodeArea codeArea = Main.getCodeArea();
-        codeArea.clear();
-        Main.setCodeArea(codeArea);
+        CodeEditor.addTab(new EditorTab(null, null));
     }
 }

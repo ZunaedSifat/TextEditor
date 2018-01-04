@@ -6,8 +6,6 @@ import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 
-import texteditor.main.Main;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -25,21 +23,15 @@ public class OpenFile {
 
             try {
                 FileReader reader = new FileReader(file);
-                String text = reader.toString();
-
-                CodeArea codeArea = new CodeArea(text);
-                codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
-                // check for more formatting
-
-                Main.setCodeArea(codeArea);
+                String text = reader.
+                System.out.println(text);
 
             } catch (IOException e) {
 
                 e.printStackTrace();
             }
         }
-        else {
-            // todo: prompt
-        }
+
+        //todo: may be a prompt, may be not
     }
 }

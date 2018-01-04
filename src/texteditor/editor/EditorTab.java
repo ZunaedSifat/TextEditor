@@ -3,13 +3,14 @@ package texteditor.editor;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 
-public class Tab {
+public class EditorTab {
 
     private CodeArea codeArea = new CodeArea();
     private String path = null;
     private String filename = null;
+    private String tabname;
 
-    public Tab(String path, String filename) {
+    public EditorTab(String path, String filename) {
 
         if (texteditor.view.LineNumber.isLineNumberEnabled())
             codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
@@ -21,8 +22,10 @@ public class Tab {
             this.path = path;
             this.filename = filename;
             this.addSyntaxHighlighting();
+            this.tabname = filename;
+        } else {
+            this.tabname = "Untitled";
         }
-
     }
 
     public CodeArea getCodeArea() {
@@ -57,5 +60,13 @@ public class Tab {
             ; // java highlighting
         // ....
         // ....
+    }
+
+    public String getTabname() {
+        return tabname;
+    }
+
+    public void setTabname(String tabname) {
+        this.tabname = tabname;
     }
 }

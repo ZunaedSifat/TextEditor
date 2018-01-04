@@ -26,10 +26,10 @@ public class FileMenu {
         });
 
         MenuItem saveFile = new MenuItem("Save File");
-        saveFile.setOnAction(e -> SaveFile.saveFile() );
+        //todo: saveFile.setOnAction(e -> SaveFile.saveFile() );
 
         MenuItem saveFileAs = new MenuItem("Save File As...");
-        saveFileAs.setOnAction(e -> SaveFIleAs.saveFileAs());
+        //todo: saveFileAs.setOnAction(e -> SaveFIleAs.saveFileAs());
 
         MenuItem exitProgram = new MenuItem("Exit Program");
         exitProgram.setOnAction(e -> {
