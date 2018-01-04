@@ -2,7 +2,6 @@ package texteditor.file;
 
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import texteditor.data.FileInfo;
 import texteditor.main.Main;
 
 import java.io.File;
@@ -30,8 +29,8 @@ public class SaveFIleAs {
                 fileWriter.close();
 
                 // updating file info in the database
-                FileInfo.setFilename(file.getAbsoluteFile().toString());
-                FileInfo.addNewFileToRecentList(file.getAbsoluteFile().toString());
+                //todo: FileInfo.setFilename(file.getAbsoluteFile().toString());
+                //todo: FileInfo.addNewFileToRecentList(file.getAbsoluteFile().toString());
 
             } catch (IOException e) {
 

@@ -7,7 +7,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import org.fxmisc.richtext.CodeArea;
-import org.fxmisc.richtext.LineNumberFactory;
+import texteditor.editor.Tab;
 
 public class Main extends Application{
 
@@ -29,18 +29,21 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        //codeArea = (new JavaKeywordsAsync()).getCodeArea();
-        codeArea = new CodeArea();
-        codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
+        Tab tab1 = new Tab(null, null);
+        Tab tab2 = new Tab(null, null);
 
         menuBar = new MenuBar();
-        menuBar.getMenus().addAll(texteditor.file.FileMenu.getMenu());
+        menuBar.getMenus().addAll(texteditor.file.FileMenu.getMenu(),
+                                texteditor.edit.EditMenu.getEditMenu(),
+                                texteditor.view.ViewMenu.getViewMenu(),
+                                texteditor.help.HelpMenu.getHelp());
 
         VBox layout = new VBox(10);
-        layout.getChildren().addAll(menuBar, codeArea);
+        layout.getChildren().addAll(menuBar, tab1.getCodeArea());
 
         primaryStage.setTitle("Text Editor");
         primaryStage.setScene(new Scene(layout, 640, 480));
+        layout.getChildren().addAll(tab2.getCodeArea());
         primaryStage.show();
     }
 }
