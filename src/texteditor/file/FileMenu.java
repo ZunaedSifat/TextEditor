@@ -35,9 +35,7 @@ public class FileMenu {
         saveAllFiles.setOnAction(e -> SaveAllFiles.saveAllFiles());
 
         MenuItem closeFile = new MenuItem("Close File");
-        closeFile.setOnAction(e -> {
-
-        });
+        closeFile.setOnAction(e -> CloseFile.closeFile());
 
         MenuItem fileProperties = new MenuItem("File Properties");
         fileProperties.setOnAction(e -> {
