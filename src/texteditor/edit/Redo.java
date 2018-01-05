@@ -1,9 +1,17 @@
 package texteditor.edit;
 
-public class Redo implements Runnable {
+import javafx.scene.control.Tab;
+import org.fxmisc.richtext.CodeArea;
+import texteditor.main.CodeEditor;
 
-    @Override
-    public void run() {
+public class Redo {
 
+    public static void redo() {
+
+        Tab tab = CodeEditor.getTabPane().getSelectionModel().getSelectedItem();
+        CodeArea codeArea = (CodeArea) tab.getContent();
+
+        if (codeArea.isRedoAvailable())
+            codeArea.redo();
     }
 }

@@ -3,22 +3,18 @@ package texteditor.edit;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
-import org.fxmisc.richtext.CodeArea;
 
 public class EditMenu {
 
     private static Menu editMenu = new Menu("Edit");
+
     static {
 
         MenuItem undo = new MenuItem("Undo");
-        undo.setOnAction(e -> {
-
-        });
+        undo.setOnAction(e -> Undo.undo());
 
         MenuItem redo = new MenuItem("Redo");
-        redo.setOnAction(e -> {
-
-        });
+        redo.setOnAction(e -> Redo.redo());
 
         MenuItem copy = new MenuItem("Copy");
         copy.setOnAction(e -> Copy.copy());
@@ -57,9 +53,5 @@ public class EditMenu {
 
     public static Menu getEditMenu() {
         return editMenu;
-    }
-
-    public static void setEditMenu(Menu editMenu) {
-        EditMenu.editMenu = editMenu;
     }
 }
