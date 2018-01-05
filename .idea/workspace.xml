@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/Copy.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/Copy.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/editor/Tab.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/FileMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/FileMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/NewFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/NewFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/OpenFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/OpenFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFIleAs.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/Commons.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/Main.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/edit/Copy.java" afterPath="$PROJECT_DIR$/src/texteditor/edit/Copy.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/editor/Tab.java" afterPath="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" afterPath="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" />
       <change beforePath="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/NewFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/NewFile.java" />
       <change beforePath="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/SaveFIleAs.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/SaveFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/SaveFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/main/Commons.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" afterPath="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" />
       <change beforePath="$PROJECT_DIR$/src/texteditor/main/Main.java" afterPath="$PROJECT_DIR$/src/texteditor/main/Main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -81,12 +67,11 @@
       <file leaf-file-name="FileMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="-559">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
+                <element signature="e#1788#1789#0" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,25 +80,71 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenFile.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/texteditor/file/OpenFile.java">
+      <file leaf-file-name="SaveAllFiles.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="38">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/file/Properties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditorTab.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/editor/EditorTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-635">
+              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1521#1522#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1602#1603#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#1700#1701#0" expanded="true" />
+                <element signature="e#1740#1741#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+                <element signature="e#1838#1839#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+                <element signature="e#1926#1927#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#2246#2247#0" expanded="true" />
+                <element signature="e#2284#2285#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenRecent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/file/OpenRecent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/texteditor/main/JavaKeywordAsync.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/JavaKeywordsAsync.java" />
         <option value="$PROJECT_DIR$/src/texteditor/data/FileInfo.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/EditMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/InvertSelection.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/SelectAll.java" />
@@ -196,15 +226,16 @@
         <option value="$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/SaveFIleAs.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/Copy.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/SaveFile.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/ReadFile.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/CodeEditor.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/NewFile.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/Main.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" />
       </list>
     </option>
   </component>
@@ -589,12 +620,12 @@
       <workItem from="1514736312558" duration="4397000" />
       <workItem from="1514743676975" duration="8748000" />
       <workItem from="1514787574635" duration="968000" />
-      <workItem from="1515058899566" duration="20879000" />
+      <workItem from="1515058899566" duration="24909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46474000" />
+    <option name="totallyTimeSpent" value="50504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1315" height="780" extended-state="6" />
@@ -689,8 +720,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/editor.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/EditorController.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/edit.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/main/MenuBar.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/main/Sample.java" />
@@ -706,14 +735,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileChooser.java" />
-    <entry file="file://$PROJECT_DIR$/src/texteditor/file/OpenRecent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/view/SplitWindowVerically.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -918,32 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/editor/EditorTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1084,18 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/file/NewFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1108,25 +1091,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="38">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/editor/EditorTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-635">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1740#1741#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+            <element signature="e#1838#1839#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-559">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/file/OpenFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="456">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/OpenRecent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

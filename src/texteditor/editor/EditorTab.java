@@ -5,12 +5,34 @@ import org.fxmisc.richtext.LineNumberFactory;
 
 public class EditorTab {
 
-    private CodeArea codeArea = new CodeArea();
+    private CodeArea codeArea;
     private String path = null;
     private String filename = null;
     private String tabname;
 
     public EditorTab(String path, String filename) {
+
+        codeArea = new CodeArea();
+
+        if (texteditor.view.LineNumber.isLineNumberEnabled())
+            codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
+        if (texteditor.view.WordWrap.isWordWrapEnabled())
+            codeArea.setWrapText(true);
+
+        if (path != null && filename != null) {
+
+            this.path = path;
+            this.filename = filename;
+            this.addSyntaxHighlighting();
+            this.tabname = filename;
+        } else {
+            this.tabname = "Untitled";
+        }
+    }
+
+    public EditorTab(String path, String filename, String text) {
+
+        codeArea = new CodeArea(text);
 
         if (texteditor.view.LineNumber.isLineNumberEnabled())
             codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));

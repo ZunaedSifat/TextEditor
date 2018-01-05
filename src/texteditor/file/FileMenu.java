@@ -31,6 +31,21 @@ public class FileMenu {
         MenuItem saveFileAs = new MenuItem("Save File As...");
         //todo: saveFileAs.setOnAction(e -> SaveFIleAs.saveFileAs());
 
+        MenuItem saveAllFiles = new MenuItem("Save All Files");
+        saveAllFiles.setOnAction(e -> {
+
+        });
+
+        MenuItem closeFile = new MenuItem("Close File");
+        closeFile.setOnAction(e -> {
+
+        });
+
+        MenuItem fileProperties = new MenuItem("File Properties");
+        fileProperties.setOnAction(e -> {
+
+        });
+
         MenuItem exitProgram = new MenuItem("Exit Program");
         exitProgram.setOnAction(e -> {
             // exit program
@@ -38,7 +53,8 @@ public class FileMenu {
 
         menu.getItems().addAll(newFile, new SeparatorMenuItem(),
                 openFile, openRecent, new SeparatorMenuItem(),
-                saveFile, saveFileAs, new SeparatorMenuItem(),
+                saveFile, saveFileAs, saveAllFiles, new SeparatorMenuItem(),
+                closeFile, fileProperties, new SeparatorMenuItem(),
                 exitProgram);
     }
 
