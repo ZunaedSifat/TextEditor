@@ -1,18 +1,32 @@
 package texteditor.file;
 
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
-
+import javafx.scene.control.Tab;
 import texteditor.editor.EditorTab;
-import texteditor.main.Main;
+import texteditor.main.CodeEditor;
 
-import java.io.File;
+import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class SaveFile {
 
-    public static void saveFile(EditorTab editorTab) {
+    public static void saveFile() {
+
+        Tab tab = CodeEditor.getTabPane().getSelectionModel().getSelectedItem();
+        EditorTab editorTab = (EditorTab) tab.getContent();
+
+        if (editorTab.getPath() != null) {
+
+            try {
+                BufferedWriter writer = new BufferedWriter(new FileWriter(editorTab.getPath()));
+                writer.write(editorTab.getText());
+                writer.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        } else {
+            SaveFileAs.saveFileAs();
+        }
 
     }
 }

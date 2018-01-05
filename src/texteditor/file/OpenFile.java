@@ -34,8 +34,7 @@ public class OpenFile {
 
                 reader.close();
 
-                EditorTab editorTab = new EditorTab(file.getPath(), file.getName(), stringBuffer.toString());
-                CodeEditor.addTab(editorTab);
+                CodeEditor.addTab(file.getPath(), stringBuffer.toString());
 
             } catch (IOException e) {
 
