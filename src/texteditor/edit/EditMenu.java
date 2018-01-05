@@ -3,6 +3,7 @@ package texteditor.edit;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import org.fxmisc.richtext.CodeArea;
 
 public class EditMenu {
 
@@ -20,19 +21,13 @@ public class EditMenu {
         });
 
         MenuItem copy = new MenuItem("Copy");
-        copy.setOnAction(e -> {
-
-        });
+        copy.setOnAction(e -> Copy.copy());
 
         MenuItem cut = new MenuItem("Cut");
-        cut.setOnAction(e -> {
-
-        });
+        cut.setOnAction(e -> Cut.cut());
 
         MenuItem paste = new MenuItem("Paste");
-        paste.setOnAction(e -> {
-
-        });
+        paste.setOnAction(e -> Paste.paste());
 
         MenuItem find = new MenuItem("Find");
         find.setOnAction(e -> {

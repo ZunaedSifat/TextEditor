@@ -1,9 +1,15 @@
 package texteditor.edit;
 
-public class Cut implements Runnable {
+import javafx.scene.control.Tab;
+import org.fxmisc.richtext.CodeArea;
+import texteditor.main.CodeEditor;
 
-    @Override
-    public void run() {
+public class Cut {
 
+    public static void cut() {
+
+        Tab tab = CodeEditor.getTabPane().getSelectionModel().getSelectedItem();
+        CodeArea codeArea = (CodeArea) tab.getContent();
+        codeArea.cut();
     }
 }
