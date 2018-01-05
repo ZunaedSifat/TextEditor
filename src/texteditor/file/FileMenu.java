@@ -32,9 +32,7 @@ public class FileMenu {
         saveFileAs.setOnAction(e -> SaveFileAs.saveFileAs());
 
         MenuItem saveAllFiles = new MenuItem("Save All Files");
-        saveAllFiles.setOnAction(e -> {
-
-        });
+        saveAllFiles.setOnAction(e -> SaveAllFiles.saveAllFiles());
 
         MenuItem closeFile = new MenuItem("Close File");
         closeFile.setOnAction(e -> {

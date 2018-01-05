@@ -12,6 +12,11 @@ public class SaveFile {
     public static void saveFile() {
 
         Tab tab = CodeEditor.getTabPane().getSelectionModel().getSelectedItem();
+        saveFile(tab);
+    }
+
+    public static void saveFile(Tab tab) {
+
         EditorTab editorTab = (EditorTab) tab.getContent();
 
         if (editorTab.getPath() != null) {
@@ -27,6 +32,5 @@ public class SaveFile {
         } else {
             SaveFileAs.saveFileAs();
         }
-
     }
 }
