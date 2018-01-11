@@ -16,7 +16,7 @@ public class HelpMenu {
         MenuItem githubRepo = new MenuItem("Github Repository");
         githubRepo.setOnAction(e -> GitHubRepository.open());
         MenuItem faq = new MenuItem("FAQ");
-        MenuItem checkForUpdates = new MenuItem("Check for updates");
+        MenuItem checkForUpdates = new MenuItem("Check for Updates");
 
         help.getItems().addAll(about, faq, new SeparatorMenuItem(),
                 githubRepo, checkForUpdates);
