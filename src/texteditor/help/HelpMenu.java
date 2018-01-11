@@ -12,7 +12,9 @@ public class HelpMenu {
         help = new Menu("_Help");
 
         MenuItem about = new MenuItem("About");
+
         MenuItem githubRepo = new MenuItem("Github Repository");
+        githubRepo.setOnAction(e -> GitHubRepository.open());
         MenuItem faq = new MenuItem("FAQ");
         MenuItem checkForUpdates = new MenuItem("Check for updates");
 

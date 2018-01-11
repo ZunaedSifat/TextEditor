@@ -1,0 +1,10 @@
+view.wordWrap : true
+view.lineNumber : false
+view.fileExplorer : true
+view.theme : light
+
+preference.autoSave : true
+preference.autoSaveDelay : 30s
+preference.fontFace :
+preference.fontSize :
+preference.fontStyle :

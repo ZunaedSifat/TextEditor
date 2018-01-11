@@ -1,0 +1,28 @@
+# available options are true and false
+view.wordWrap : false
+
+# available options are true and false
+view.lineNumber : false
+
+
+# available options are true and false
+view.fileExplorer : true
+
+# available options are light and dark
+view.theme : light
+
+# available options are true and false
+preference.autoSave : true
+
+# works only if autosave is enabled. available options are 30s, 1m, 2m, 5m
+preference.autoSaveDelay : 30s
+
+# available options are (installed fonts on the system). If the font is not found,
+# uses any of consolas or ubuntu mono by default
+preference.fontFace :
+
+# available options are any numerical value
+preference.fontSize :
+
+# available options : regular, bold, italic, bold-italic
+preference.fontStyle :
