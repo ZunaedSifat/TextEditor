@@ -1,5 +1,5 @@
 view.wordWrap : true
-view.lineNumber : false
+view.lineNumber : true
 view.fileExplorer : true
 view.theme : light
 

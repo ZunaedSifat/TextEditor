@@ -1,6 +1,8 @@
 package texteditor.view;
 
 import javafx.scene.control.*;
+import org.fxmisc.richtext.LineNumberFactory;
+import texteditor.editor.EditorTab;
 import texteditor.main.CodeEditor;
 
 public class ViewMenu {
@@ -25,8 +27,11 @@ public class ViewMenu {
         showLineNumber.setSelected(LineNumber.isLineNumberEnabled());
         showLineNumber.setOnAction(e -> {
 
-            // todo: toggle value
-
+            EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+            if (!showLineNumber.isSelected())
+                editorTab.setParagraphGraphicFactory(null);
+            else
+                editorTab.setParagraphGraphicFactory(LineNumberFactory.get(editorTab));
         });
 
         MenuItem font = new MenuItem("Font");
