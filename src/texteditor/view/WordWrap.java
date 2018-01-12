@@ -1,7 +1,5 @@
 package texteditor.view;
 
-import sun.security.ec.ECDHKeyAgreement;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 
@@ -27,10 +25,5 @@ public class WordWrap {
     }
     public static boolean isWordWrapEnabled() {
         return wordWrapEnabled;
-    }
-
-    public static void setWordWrapEnabled(boolean wordWrapEnabled) {
-        WordWrap.wordWrapEnabled = wordWrapEnabled;
-        //todo: write in files
     }
 }

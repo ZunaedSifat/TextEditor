@@ -40,5 +40,8 @@ public class CodeEditor {
         Tab tab = new Tab(title);
         tab.setContent(new EditorTab(path, text));
         tab.setOnCloseRequest(e -> CloseFile.closeFile(tab));
+
+        tabPane.getTabs().add(tab);
+        tabPane.getSelectionModel().select(tab);
     }
 }
