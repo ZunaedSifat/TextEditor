@@ -7,7 +7,7 @@ public class GitHubRepository {
 
     public static void open() {
 
-        String url = "http://github.com/ZunaedSifat/TextEditor";
+        String url = "http://github.com/ZunaedSifat";
         System.out.println(1);
 
         try {

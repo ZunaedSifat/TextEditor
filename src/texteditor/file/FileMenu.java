@@ -3,10 +3,6 @@ package texteditor.file;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
-
-import java.io.File;
 
 public class FileMenu {
 

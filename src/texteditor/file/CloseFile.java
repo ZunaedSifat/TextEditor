@@ -15,6 +15,10 @@ public class CloseFile {
     public static void closeFile() {
 
         Tab tab = CodeEditor.getTabPane().getSelectionModel().getSelectedItem();
+        closeFile(tab);
+    }
+
+    public static void closeFile(Tab tab) {
 
         if (!isFileUpdated(tab)) {
 
@@ -35,6 +39,12 @@ public class CloseFile {
     private static boolean isFileUpdated(Tab tab) {
 
         String currentText = ((EditorTab) tab.getContent()).getText();
+
+        if (currentText == null)
+            return true;
+        if (((EditorTab) tab.getContent()).getPath() == null)
+            return false;
+
         StringBuffer savedText = new StringBuffer("");
 
         try {
@@ -52,7 +62,14 @@ public class CloseFile {
             e.printStackTrace();
         }
 
-        //todo: always returns false, check why
-        return savedText.equals(currentText);
+        for (int i = 0; i < Math.max(savedText.length(), currentText.length()); i++) {
+
+            if (i >= savedText.length() || i >= currentText.length())
+                return false;
+            else if (savedText.charAt(i) != currentText.charAt(i))
+                return false;
+        }
+
+        return true;
     }
 }

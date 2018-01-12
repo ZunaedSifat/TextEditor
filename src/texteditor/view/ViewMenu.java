@@ -1,6 +1,7 @@
 package texteditor.view;
 
 import javafx.scene.control.*;
+import texteditor.main.CodeEditor;
 
 public class ViewMenu {
 
@@ -13,23 +14,19 @@ public class ViewMenu {
         });
 
         CheckMenuItem wordWrap = new CheckMenuItem("Word Wrap");
+        wordWrap.setSelected(WordWrap.isWordWrapEnabled());
         wordWrap.setOnAction(e -> {
 
-            if (wordWrap.isSelected()) {
+            // todo: toggle value
 
-            } else {
-
-            }
         });
 
         CheckMenuItem showLineNumber = new CheckMenuItem("Show Line Number");
+        showLineNumber.setSelected(LineNumber.isLineNumberEnabled());
         showLineNumber.setOnAction(e -> {
 
-            if (showLineNumber.isSelected()) {
+            // todo: toggle value
 
-            } else {
-
-            }
         });
 
         MenuItem font = new MenuItem("Font");
