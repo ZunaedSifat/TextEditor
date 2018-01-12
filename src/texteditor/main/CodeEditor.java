@@ -5,9 +5,13 @@ import javafx.scene.control.TabPane;
 import texteditor.editor.EditorTab;
 import texteditor.file.CloseFile;
 
+import java.util.ArrayList;
+
 public class CodeEditor {
 
     private static TabPane tabPane;
+    //private static ArrayList<Tab> tabList;
+
     static {
 
         Tab tab = new Tab("Untitled");
@@ -16,6 +20,7 @@ public class CodeEditor {
 
         tabPane = new TabPane();
         tabPane.getTabs().add(tab);
+        //tabList.add(tab);
     }
 
     public static TabPane getTabPane() {
@@ -25,13 +30,16 @@ public class CodeEditor {
     public static void addTab(String path) {
 
         String title = (path == null) ? "Untitled" : path;
+
         Tab tab = new Tab(title);
         tab.setContent(new EditorTab(path));
         tab.setOnCloseRequest(e -> {
             CloseFile.closeFile(tab);
         });
-        // todo: close actions and others
+
         tabPane.getTabs().add(tab);
+        tabPane.getSelectionModel().select(tab);
+        //tabList.add(tab);
     }
 
     public static void addTab(String path, String text) {
@@ -42,8 +50,9 @@ public class CodeEditor {
         tab.setOnCloseRequest(e -> {
             CloseFile.closeFile(tab);
         });
-        // todo: close actions and others
+
         tabPane.getTabs().add(tab);
-        //todo: set selection
+        tabPane.getSelectionModel().select(tab);
+        //tabList.add(tab);
     }
 }
