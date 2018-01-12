@@ -18,9 +18,8 @@ public class ViewMenu {
         CheckMenuItem wordWrap = new CheckMenuItem("Word Wrap");
         wordWrap.setSelected(WordWrap.isWordWrapEnabled());
         wordWrap.setOnAction(e -> {
-
-            // todo: toggle value
-
+            EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+            editorTab.setWrapText(wordWrap.isSelected());
         });
 
         CheckMenuItem showLineNumber = new CheckMenuItem("Show Line Number");

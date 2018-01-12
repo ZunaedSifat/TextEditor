@@ -8,7 +8,6 @@ public class LineNumber {
 
     private static boolean lineNumberEnabled = true;
     static {
-
         try {
             BufferedReader reader = new BufferedReader( new FileReader("data/user.csv"));
 
@@ -19,13 +18,9 @@ public class LineNumber {
 
                 if (line.startsWith("view.lineNumber") && line.endsWith("false"))
                     lineNumberEnabled = false;
-
-                System.out.println(line);
-                if (line.startsWith("view.lineNumber"))
-                    System.out.println(line);
             }
-
             reader.close();
+
         } catch (FileNotFoundException e) {
 
             e.printStackTrace();
