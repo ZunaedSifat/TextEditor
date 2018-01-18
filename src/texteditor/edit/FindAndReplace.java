@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import org.fxmisc.richtext.model.Paragraph;
 import texteditor.editor.EditorTab;
 import texteditor.main.CodeEditor;
 
@@ -16,6 +17,8 @@ public class FindAndReplace extends Application {
 
     TextField textToFindTextArea;
     TextField replaceWithTextField;
+    int startCol = 0;
+    int startRow = 0;
 
     public static void main(String[] args) {
         launch(args);
@@ -36,11 +39,11 @@ public class FindAndReplace extends Application {
         GridPane.setConstraints(textToFindTextArea, 1, 0);
 
         Button findNextButton = new Button("Find Next");
-        findNextButton.setOnAction(e -> { /* todo: implement */});
+        findNextButton.setOnAction(e -> findNext());
         GridPane.setConstraints(findNextButton, 2, 0);
 
         Button findPreviousButton = new Button("Find Previous");
-        findPreviousButton.setOnAction(e -> { /* todo: implement */ });
+        findPreviousButton.setOnAction(e -> findPrevious());
         GridPane.setConstraints(findPreviousButton, 3, 0);
 
         Label replaceLabel = new Label("Replace with");
@@ -93,17 +96,47 @@ public class FindAndReplace extends Application {
         if (replaceWithTextField.getText() == null || textToFindTextArea.getText() == null) return;
 
         EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
-        if (editorTab.getSelectedText() == null) findNext();
+        if (editorTab.getSelectedText() != textToFindTextArea.getText()) {
+            findNext();
+            if (editorTab.getSelection().getLength() == textToFindTextArea.getText().length())
+                editorTab.replaceSelection(replaceWithTextField.getText());
+            else {
+                startCol = 0;
+                startRow = 0;
+            }
 
-        int startPos = editorTab.getSelection().getStart();
-        int endPos = editorTab.getSelection().getEnd();
-        editorTab.replaceText(startPos, endPos, replaceWithTextField.getText());
+        }
     }
 
     private void findNext() {
 
-        // comment added
+        EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+        String findText = textToFindTextArea.getText();
 
+        if (startRow >= editor.getParagraphs().size()) {
+            startRow = 0;
+            startCol = 0;
+            return;
+        }
+
+        Paragraph paragraph = editor.getParagraph(startRow);
+        String text = paragraph.getText();
+        if (text.indexOf(findText, startCol) != -1) {
+
+             int startPos = editor.position(startRow, text.indexOf(findText, startCol)).toOffset();
+             editor.selectRange(startPos, startPos+findText.length());
+
+             if (text.indexOf(findText, startCol) + findText.length() >= paragraph.getText().length()) {
+                 startCol = 0;
+                 startRow++;
+             } else {
+                 startCol = text.indexOf(findText, startCol) + findText.length() + 1;
+             }
+        } else {
+            startCol = 0;
+            startRow += 1;
+            findNext();
+        }
     }
 
     private void findPrevious() {
