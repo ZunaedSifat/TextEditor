@@ -50,9 +50,11 @@ public class FindAndReplace extends Application {
         GridPane.setConstraints(replaceWithTextField, 1, 1);
 
         Button replaceButton = new Button("Replace");
+        replaceButton.setOnAction(e -> replace());
         GridPane.setConstraints(replaceButton, 2, 1);
 
         Button replaceAllButton = new Button("Replace All");
+        replaceAllButton.setOnAction(e -> replaceAll());
         GridPane.setConstraints(replaceAllButton, 3, 1);
 
         Button closeButton = new Button("Close");
@@ -81,24 +83,28 @@ public class FindAndReplace extends Application {
             return;
 
         String replacedText = editorTab.getText();
-        replacedText.replaceAll(textToFindTextArea.getText(), replaceWithTextField.getText());
+        replacedText = replacedText.replaceAll(textToFindTextArea.getText(), replaceWithTextField.getText());
         editorTab.selectAll();
         editorTab.replaceSelection(replacedText);
     }
 
-    public void replace() {
+    private void replace() {
 
-        if (replaceWithTextField.getText() == null) return;
+        if (replaceWithTextField.getText() == null || textToFindTextArea.getText() == null) return;
 
         EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+        if (editorTab.getSelectedText() == null) findNext();
+
         int startPos = editorTab.getSelection().getStart();
         int endPos = editorTab.getSelection().getEnd();
-
         editorTab.replaceText(startPos, endPos, replaceWithTextField.getText());
     }
 
-    /*  int startPos = editorTab.position(2, 6).toOffset();
-        int endPos = editorTab.position(2, 10).toOffset();
-        editorTab.selectRange(startPos, endPos);
-    */
+    private void findNext() {
+
+    }
+
+    private void findPrevious() {
+
+    }
 }
