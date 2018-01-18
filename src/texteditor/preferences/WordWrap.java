@@ -1,4 +1,4 @@
-package texteditor.view;
+package texteditor.preferences;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

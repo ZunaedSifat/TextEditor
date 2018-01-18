@@ -61,9 +61,7 @@ public class FindAndReplace extends Application {
         GridPane.setConstraints(replaceAllButton, 3, 1);
 
         Button closeButton = new Button("Close");
-        closeButton.setOnAction(e -> {
-
-        });
+        closeButton.setOnAction(e -> System.exit(0));
         GridPane.setConstraints(closeButton, 1, 3);
 
 
@@ -167,7 +165,6 @@ public class FindAndReplace extends Application {
             if (startRow >= 0) startCol = editor.getParagraph(startRow).length()-1;
             findPrevious();
         }
-
-
     }
+
 }

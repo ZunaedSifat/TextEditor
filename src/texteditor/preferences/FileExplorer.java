@@ -1,4 +1,4 @@
-package texteditor.view;
+package texteditor.preferences;
 
 public class FileExplorer {
 

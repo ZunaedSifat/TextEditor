@@ -1,4 +1,4 @@
 package texteditor.preferences;
 
-public class AutoSaveFiles {
+public class Theme {
 }
