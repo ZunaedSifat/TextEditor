@@ -3,6 +3,7 @@ package texteditor.edit;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.stage.Stage;
 
 public class EditMenu {
 
@@ -25,14 +26,13 @@ public class EditMenu {
         MenuItem paste = new MenuItem("Paste");
         paste.setOnAction(e -> Paste.paste());
 
-        MenuItem find = new MenuItem("Find");
-        find.setOnAction(e -> {
-
-        });
-
-        MenuItem replace = new MenuItem("Replace");
-        replace.setOnAction(e -> {
-
+        MenuItem findAndReplace = new MenuItem("Find & Replace");
+        findAndReplace.setOnAction(e -> {
+            try {
+                 (new FindAndReplace()).start(new Stage());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         });
 
         MenuItem selectAll = new MenuItem("Select All");
@@ -47,7 +47,7 @@ public class EditMenu {
 
         editMenu.getItems().addAll(undo, redo, new SeparatorMenuItem(),
                 copy, cut, paste, new SeparatorMenuItem(),
-                find, replace, new SeparatorMenuItem(),
+                findAndReplace, new SeparatorMenuItem(),
                 selectAll, invertSelection);
     }
 
