@@ -102,6 +102,8 @@ public class FindAndReplace extends Application {
 
     private void findNext() {
 
+        // comment added
+
     }
 
     private void findPrevious() {
