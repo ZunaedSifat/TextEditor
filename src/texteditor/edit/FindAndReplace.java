@@ -104,7 +104,6 @@ public class FindAndReplace extends Application {
                 startCol = 0;
                 startRow = 0;
             }
-
         }
     }
 
@@ -139,7 +138,36 @@ public class FindAndReplace extends Application {
         }
     }
 
+
     private void findPrevious() {
+
+        EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+        String findText = textToFindTextArea.getText();
+
+        if (startCol < 0 || startRow < 0) {
+            startRow--;
+
+            if (startRow < 0) {
+                startRow = editor.getParagraphs().size() - 1;
+                return;
+            }
+            startCol = editor.getParagraph(startRow).length()-1;
+        }
+
+        String text = editor.getParagraph(startRow).getText();
+        if (text.lastIndexOf(findText, startCol) != -1) {
+
+            int startPos = editor.position(startRow, text.lastIndexOf(findText, startCol)).toOffset();
+            editor.selectRange(startPos, startPos+findText.length());
+
+            startCol = text.lastIndexOf(findText, startCol) - 1;
+        } else {
+
+            startRow--;
+            if (startRow >= 0) startCol = editor.getParagraph(startRow).length()-1;
+            findPrevious();
+        }
+
 
     }
 }
