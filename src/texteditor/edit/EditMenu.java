@@ -36,9 +36,7 @@ public class EditMenu {
         });
 
         MenuItem selectAll = new MenuItem("Select All");
-        selectAll.setOnAction(e -> {
-
-        });
+        selectAll.setOnAction(e -> SelectAll.selectAll());
 
         MenuItem invertSelection = new MenuItem("Invert Selection");
         invertSelection.setOnAction(e -> {

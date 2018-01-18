@@ -1,9 +1,14 @@
 package texteditor.edit;
 
-public class SelectAll implements Runnable {
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
 
-    @Override
-    public void run() {
+public class SelectAll {
 
+    public static void selectAll() {
+
+        EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+        editorTab.selectAll();
     }
+
 }
