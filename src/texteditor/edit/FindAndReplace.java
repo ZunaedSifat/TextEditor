@@ -95,8 +95,6 @@ public class FindAndReplace extends Application {
 
         EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
 
-        System.out.println("The selected text: " + editorTab.getSelectedText());
-
         if (!(editorTab.getSelectedText().equals(textToFindTextArea.getText()))) {
 
             findNext();
@@ -147,7 +145,6 @@ public class FindAndReplace extends Application {
 
 
     private void findPrevious() {
-        System.out.println("find previous called");
 
         EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
         String findText = textToFindTextArea.getText();
@@ -177,7 +174,6 @@ public class FindAndReplace extends Application {
             if (startRow >= 0) startCol = editor.getParagraph(startRow).length() - 1;
         }
 
-        System.out.println("find previous quit");
     }
 
 }
