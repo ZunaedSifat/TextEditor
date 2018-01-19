@@ -45,7 +45,7 @@ public class PreferenceMenu {
         });
 
         MenuItem resetPreferences = new MenuItem("Reset Preferences");
-        resetPreferences.setOnAction(e -> {});
+        resetPreferences.setOnAction(e -> ResetPreference.resetPreference());
 
         preferencesMenu.getItems().addAll(autoSave, new SeparatorMenuItem(),
                 wordWrap, showLineNumber, new SeparatorMenuItem(),

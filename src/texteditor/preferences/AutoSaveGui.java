@@ -31,7 +31,7 @@ public class AutoSaveGui extends Application {
         GridPane.setConstraints(delayTextField, 1, 0);
 
         Button closeButton = new Button("Close");
-        closeButton.setOnAction(e -> System.exit(0));
+        closeButton.setOnAction(e -> primaryStage.close());
         GridPane.setConstraints(closeButton, 0, 1);
 
         Button toggleAutoSaveButton = new Button();

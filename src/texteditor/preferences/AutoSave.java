@@ -17,20 +17,30 @@ public class AutoSave implements Runnable {
     @Override
     public void run() {
 
-        if (PreferenceData.isAutoSaveEnabled()) {
+        while (!PreferenceData.isProgramClosed()) {
+            System.out.println("autosave: " + 1);
 
-            for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+            if (PreferenceData.isAutoSaveEnabled()) {
 
-                EditorTab editor = (EditorTab) tab.getContent();
-                if (editor.getPath() != null)
-                    SaveFile.saveFile(tab);
+                for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+
+                    EditorTab editor = (EditorTab) tab.getContent();
+                    if (editor.getPath() != null)
+                        SaveFile.saveFile(tab);
+
+                    System.out.println(editor.getPath());
+                }
             }
-        }
 
-        try {
-            Thread.sleep(PreferenceData.getAutoSaveDelay());
-        } catch ( Exception e) {
-            e.printStackTrace();
+            try {
+
+                System.out.println("sleep: " + 1);
+                Thread.sleep(PreferenceData.getAutoSaveDelay());
+                System.out.println(PreferenceData.getAutoSaveDelay());
+                System.out.println("sleep: " + 1000);
+            } catch ( Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }

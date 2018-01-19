@@ -49,7 +49,7 @@ public class Font extends Application {
         GridPane.setConstraints(italicCheckBox, 1, 2);
 
         Button closeButton = new Button("Close");
-        closeButton.setOnAction(e -> System.exit(0));
+        closeButton.setOnAction(e -> primaryStage.close());
         GridPane.setConstraints(closeButton, 0, 3);
 
         Button saveButton = new Button("Save Changes");
@@ -64,7 +64,7 @@ public class Font extends Application {
         Scene scene = new Scene(gridPane, 300, 240);
         primaryStage.setTitle("Font");
         primaryStage.setScene(scene);
-        primaryStage.show();
+        primaryStage.showAndWait();
     }
 
     private void save() {

@@ -1,10 +1,8 @@
-view.wordWrap : true
-view.lineNumber : true
-view.fileExplorer : true
-view.theme : light
-
-preference.autoSave : true
-preference.autoSaveDelay : 30s
-preference.fontFace :
-preference.fontSize :
-preference.fontStyle :
+lineNumber:true
+wordWrap:true
+autoSave:true
+autoSaveDelay:180000
+fontFace:Consolas
+fontSize:20
+boldFont:true
+italicFont:true
