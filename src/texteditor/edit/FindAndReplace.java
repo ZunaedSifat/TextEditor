@@ -17,10 +17,8 @@ public class FindAndReplace extends Application {
 
     TextField textToFindTextArea;
     TextField replaceWithTextField;
-    int startCol = 0;
-    int startRow = 0;
-    int initCol = 0;
-    int initRow = 0;
+    int lastFoundRow = 0;
+    int lastFoundCol = -1;
 
     public static void main(String[] args) {
         launch(args);
@@ -96,26 +94,33 @@ public class FindAndReplace extends Application {
         if (replaceWithTextField.getText() == null || textToFindTextArea.getText() == null) return;
 
         EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
-        if (editorTab.getSelectedText() != textToFindTextArea.getText()) {
+
+        if (!(editorTab.getSelectedText().equals(textToFindTextArea.getText()))) {
+
             findNext();
             if (editorTab.getSelection().getLength() == textToFindTextArea.getText().length())
                 editorTab.replaceSelection(replaceWithTextField.getText());
-            else {
-                startCol = 0;
-                startRow = 0;
-            }
+        }
+        else {
+            if (editorTab.getSelection().getLength() == textToFindTextArea.getText().length())
+                editorTab.replaceSelection(replaceWithTextField.getText());
         }
     }
 
     private void findNext() {
-        System.out.println("find next called");
 
         EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
         String findText = textToFindTextArea.getText();
 
+        int startRow = lastFoundRow, startCol = lastFoundCol + 1;
         int totalRows = editor.getParagraphs().size();
 
-        for(int i=0; i<totalRows; ++i) {
+        for(int i=0; i<=totalRows; ++i) {
+            if(startRow >= totalRows) {
+                startRow = 0;
+                startCol = 0;
+            }
+
             Paragraph paragraph = editor.getParagraph(startRow);
             String text = paragraph.getText();
             if (text.indexOf(findText, startCol) != -1) {
@@ -124,58 +129,51 @@ public class FindAndReplace extends Application {
                 editor.selectRange(startPos, startPos + findText.length());
 
                 if (text.indexOf(findText, startCol) + findText.length() >= paragraph.length()) {
-                    startCol = 0;
-                    startRow++;
+                    lastFoundCol = -1;
+                    lastFoundRow = startRow + 1;
                 } else {
-                    startCol = text.indexOf(findText, startCol) + 1;
+                    lastFoundRow = startRow;
+                    lastFoundCol = text.indexOf(findText, startCol);
                 }
                 break;
-            } else {
-                startCol = 0;
-                startRow += 1;
             }
 
-            if(startRow >= totalRows) {
-                startRow = 0;
-                startCol = 0;
-            }
+            startCol = 0;
+            startRow += 1;
         }
-
-        System.out.println("find next quit");
     }
 
 
     private void findPrevious() {
-        System.out.println("find previous called");
 
         EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
         String findText = textToFindTextArea.getText();
 
-        if (startCol < 0 || startRow < 0) {
-            startRow--;
-
-            if (startRow < 0) {
-                startRow = editor.getParagraphs().size() - 1;
-                // return;
+        int startRow = lastFoundRow, startCol = lastFoundCol - 1;
+        int totalRows = editor.getParagraphs().size();
+        for (int i=0; i<=totalRows; ++i) {
+            if(startCol < 0) {
+                startRow--;
+                if(startRow < 0) startRow = totalRows - 1;
+                startCol = editor.getParagraph(startRow).length() - 1;
             }
-            startCol = editor.getParagraph(startRow).length()-1;
-        }
 
-        String text = editor.getParagraph(startRow).getText();
-        if (text.lastIndexOf(findText, startCol) != -1) {
+            String text = editor.getParagraph(startRow).getText();
+            if (text.lastIndexOf(findText, startCol) != -1) {
 
-            int startPos = editor.position(startRow, text.lastIndexOf(findText, startCol)).toOffset();
-            editor.selectRange(startPos, startPos+findText.length());
+                int startPos = editor.position(startRow, text.lastIndexOf(findText, startCol)).toOffset();
+                editor.selectRange(startPos, startPos + findText.length());
 
-            startCol = text.lastIndexOf(findText, startCol) - 1;
-        } else {
+                lastFoundRow = startRow;
+                lastFoundCol = text.lastIndexOf(findText, startCol);
+                break;
+            }
 
             startRow--;
-            if (startRow >= 0) startCol = editor.getParagraph(startRow).length()-1;
-            findPrevious();
+            if (startRow < 0) startRow = totalRows - 1;
+            if (startRow >= 0) startCol = editor.getParagraph(startRow).length() - 1;
         }
 
-        System.out.println("find previous quit");
     }
 
 }
