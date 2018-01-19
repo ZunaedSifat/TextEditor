@@ -3,14 +3,18 @@ package texteditor.preferences;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
 
 public class Font extends Application {
+
+    TextField fontFaceTextField;
+    TextField fontSizeTextField;
+    CheckBox italicCheckBox;
+    CheckBox boldCheckBox;
 
     public static void main(String[] args) {
         launch(args);
@@ -27,29 +31,29 @@ public class Font extends Application {
         Label fontNameLabel = new Label("Font Name: ");
         GridPane.setConstraints(fontNameLabel, 0, 0);
 
-        TextField fontFaceTextField = new TextField();
+        fontFaceTextField = new TextField(PreferenceData.getFontFace());
         GridPane.setConstraints(fontFaceTextField, 1, 0);
 
         Label fontSizeLabel = new Label("Font Size: ");
         GridPane.setConstraints(fontSizeLabel, 0, 1);
 
-        TextField fontSizeTextField = new TextField();
+        fontSizeTextField = new TextField(((Integer)PreferenceData.getFontSize()).toString());
         GridPane.setConstraints(fontSizeTextField, 1, 1);
 
-        CheckBox boldCheckBox = new CheckBox("Bold");
+        boldCheckBox = new CheckBox("Bold");
+        boldCheckBox.setSelected(PreferenceData.isBoldFont());
         GridPane.setConstraints(boldCheckBox, 0, 2);
 
-        CheckBox italicCheckBox = new CheckBox("Italic");
+        italicCheckBox = new CheckBox("Italic");
+        italicCheckBox.setSelected(PreferenceData.isItalicFont());
         GridPane.setConstraints(italicCheckBox, 1, 2);
 
         Button closeButton = new Button("Close");
-        closeButton.setOnAction(e -> {
-
-        });
+        closeButton.setOnAction(e -> System.exit(0));
         GridPane.setConstraints(closeButton, 0, 3);
 
         Button saveButton = new Button("Save Changes");
-        saveButton.setOnAction(e -> {});
+        saveButton.setOnAction(e -> save());
         GridPane.setConstraints(saveButton, 1, 3);
 
         gridPane.getChildren().addAll(fontNameLabel, fontFaceTextField,
@@ -61,5 +65,19 @@ public class Font extends Application {
         primaryStage.setTitle("Font");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    private void save() {
+
+        for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+
+            PreferenceData.setFontFace(fontFaceTextField.getText());
+            PreferenceData.setFontSize(Integer.parseInt(fontSizeTextField.getText()));
+            PreferenceData.setBoldFont(boldCheckBox.isSelected());
+            PreferenceData.setItalicFont(italicCheckBox.isSelected());
+
+            EditorTab editor = (EditorTab) tab.getContent();
+            editor.setStyle(PreferenceData.getFontStyle());
+        }
     }
 }

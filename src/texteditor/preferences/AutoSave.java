@@ -7,20 +7,17 @@ import texteditor.main.CodeEditor;
 
 public class AutoSave implements Runnable {
 
-    private boolean autosaveOn;
     private static AutoSave object;
-    private int delay;
-
-    private AutoSave() {
-
-        autosaveOn = false;
-        //todo: read from file
+    private AutoSave() { }
+    public static AutoSave getObject() {
+        if (object == null) object = new AutoSave();
+        return object;
     }
 
     @Override
     public void run() {
 
-        if (autosaveOn) {
+        if (PreferenceData.isAutoSaveEnabled()) {
 
             for (Tab tab : CodeEditor.getTabPane().getTabs()) {
 
@@ -31,22 +28,9 @@ public class AutoSave implements Runnable {
         }
 
         try {
-            Thread.sleep(delay);
+            Thread.sleep(PreferenceData.getAutoSaveDelay());
         } catch ( Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void autoSaveEnable(int delay) {
-
-        if (object == null) object = new AutoSave();
-        object.delay = delay;
-        object.autosaveOn = true;
-    }
-
-    public void setAutosaveDisable() {
-
-        if (object == null) object = new AutoSave();
-        object.autosaveOn = false;
     }
 }

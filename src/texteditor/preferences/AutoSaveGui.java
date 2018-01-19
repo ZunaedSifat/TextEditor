@@ -31,10 +31,12 @@ public class AutoSaveGui extends Application {
         GridPane.setConstraints(delayTextField, 1, 0);
 
         Button closeButton = new Button("Close");
+        closeButton.setOnAction(e -> System.exit(0));
         GridPane.setConstraints(closeButton, 0, 1);
 
         Button toggleAutoSaveButton = new Button();
-        toggleAutoSaveButton.setText("Button");
+        toggleAutoSaveButton.setText(PreferenceData.isAutoSaveEnabled() ? "Disable Auto Save" : "Enable Auto Save");
+        toggleAutoSaveButton.setOnAction(e -> PreferenceData.setAutoSaveEnabled(!PreferenceData.isAutoSaveEnabled()));
         GridPane.setConstraints(toggleAutoSaveButton, 1, 1);
 
         gridPane.getChildren().addAll(delayLabel, delayTextField,
