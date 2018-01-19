@@ -38,15 +38,14 @@ public class CloseFile {
 
     private static boolean isFileUpdated(Tab tab) {
 
-        String currentText = ((EditorTab) tab.getContent()).getText();
+        EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+        if (editorTab.getPath() == null) return false;
 
-        if (currentText == null)
-            return true;
-        if (((EditorTab) tab.getContent()).getPath() == null)
-            return false;
+        String currentText = editorTab.getText();
+        if (!currentText.endsWith("\n") && (currentText != null || currentText != ""))
+            currentText = currentText + "\n";
 
         StringBuffer savedText = new StringBuffer("");
-
         try {
             BufferedReader reader = new BufferedReader(new FileReader(((EditorTab) tab.getContent()).getPath()));
 
