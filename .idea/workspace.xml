@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSave.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSave.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/FileExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/Font.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/Font.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/PreferenceMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/PreferenceMenu.class" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java" afterPath="$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/AutoSaveGui.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/AutoSaveGui.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/FileExplorer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/Font.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/Font.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +72,7 @@
       <file leaf-file-name="FindAndReplace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="2772">
               <caret line="161" column="8" lean-forward="false" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,24 +81,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/texteditor/edit/EditMenu.java">
+      <file leaf-file-name="AutoSaveGui.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/AutoSaveGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="316">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Font.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/Font.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreferenceData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CloseFile.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/texteditor/file/CloseFile.java">
+      <file leaf-file-name="PreferenceMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="297">
+              <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1970#1971#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuBarCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,8 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/texteditor/Async.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/main/editor.fxml" />
         <option value="$PROJECT_DIR$/src/texteditor/main/JavaCodeAreaManager.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/CodeAreaManager.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/EditorController.java" />
@@ -168,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/SaveFile.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java" />
         <option value="$PROJECT_DIR$/src/test/HyperlinkTest.java" />
         <option value="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/help/GitHubRepository.java" />
@@ -184,11 +228,15 @@
         <option value="$PROJECT_DIR$/src/texteditor/edit/Replace.java" />
         <option value="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/ViewMenu.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/EditMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/preferences/AutoSave.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/preferences/AutoSaveGui.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/preferences/Font.java" />
       </list>
     </option>
   </component>
@@ -246,6 +294,13 @@
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="edit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
@@ -325,7 +380,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Font">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -333,6 +388,25 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    </configuration>
+    <configuration name="AutoSaveGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="texteditor.preferences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="texteditor.preferences.AutoSaveGui" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TextEditor" />
+      <envs />
     </configuration>
     <configuration name="Find" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -372,33 +446,14 @@
       <module name="TextEditor" />
       <envs />
     </configuration>
-    <configuration name="HyperlinkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Font" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="texteditor.preferences.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="test.HyperlinkTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TextEditor" />
-      <envs />
-    </configuration>
-    <configuration name="JavaKeywordsAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="texteditor.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="texteditor.main.JavaKeywordsAsync" />
+      <option name="MAIN_CLASS_NAME" value="texteditor.preferences.Font" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -538,19 +593,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.JavaKeywordsAsync" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HyperlinkTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Find" />
-      <item index="5" class="java.lang.String" itemvalue="Application.FindAndReplace" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Find" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FindAndReplace" />
+      <item index="4" class="java.lang.String" itemvalue="Application.AutoSaveGui" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Font" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FindAndReplace" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Find" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HyperlinkTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.JavaKeywordsAsync" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Font" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AutoSaveGui" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FindAndReplace" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Find" />
       </list>
     </recent_temporary>
   </component>
@@ -584,12 +639,12 @@
       <workItem from="1516089817772" duration="188000" />
       <workItem from="1516263889957" duration="23502000" />
       <workItem from="1516337989461" duration="4306000" />
-      <workItem from="1516342811029" duration="1276000" />
+      <workItem from="1516342811029" duration="7835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102142000" />
+    <option name="totallyTimeSpent" value="108701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1315" height="773" extended-state="6" />
@@ -597,13 +652,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19730942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19730942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34828103" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -684,20 +739,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/java-keywords.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/tools/ToolsMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/main/EditorTab.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/data/FileInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/TabSpaceNumber.java" />
@@ -814,13 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/main/CodeEditor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -847,40 +881,12 @@
     <entry file="file://$PROJECT_DIR$/src/texteditor/view/AutoSave.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/view/FileExplorer.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/WordWrap.java" />
-    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/Font.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/Theme.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/LineNumber.java" />
-    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/FileExplorer.java" />
-    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/AutoSave.java" />
     <entry file="file://$PROJECT_DIR$/src/texteditor/editor/EditorTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="61" lean-forward="false" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="161" column="8" lean-forward="false" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,10 +924,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/file/CloseFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="1387">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/AutoSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2772">
+          <caret line="161" column="8" lean-forward="false" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/AutoSaveGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/FileExplorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+          <folding>
+            <element signature="e#1970#1971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
           </folding>
         </state>
       </provider>

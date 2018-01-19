@@ -7,18 +7,13 @@ import texteditor.main.CodeEditor;
 
 public class PreferenceMenu {
 
-    private static Menu viewMenu  = new Menu("Preferences");
+    private static Menu preferencesMenu  = new Menu("Preferences");
     static {
 
         CheckMenuItem autoSave = new CheckMenuItem("Auto Save Files");
         autoSave.setOnAction(e -> {
 
             //todo: implement a thread to save files every (30s/1m/2m/5m)
-
-        });
-
-        CheckMenuItem showFileExplorer = new CheckMenuItem("Show File Explorer");
-        showFileExplorer.setOnAction(e -> {
 
         });
 
@@ -48,32 +43,18 @@ public class PreferenceMenu {
         });
 
         MenuItem font = new MenuItem("Font");
-        font.setOnAction(e -> {
+        font.setOnAction(e -> {});
 
-        });
+        MenuItem resetPreferences = new MenuItem("Reset Preferences");
+        resetPreferences.setOnAction(e -> {});
 
-        ToggleGroup theme = new ToggleGroup();
-
-        RadioMenuItem darkTheme = new RadioMenuItem("Dark Theme");
-        darkTheme.setOnAction(e -> {
-
-        });
-
-        RadioMenuItem lightTheme = new RadioMenuItem("Light Theme");
-        lightTheme.setOnAction(e -> {
-
-        });
-
-        darkTheme.setToggleGroup(theme);
-        lightTheme.setToggleGroup(theme);
-
-        viewMenu.getItems().addAll(showFileExplorer, new SeparatorMenuItem(),
+        preferencesMenu.getItems().addAll(autoSave, new SeparatorMenuItem(),
                 wordWrap, showLineNumber, new SeparatorMenuItem(),
                 font, new SeparatorMenuItem(),
-                lightTheme, darkTheme);
+                resetPreferences );
     }
 
-    public static Menu getViewMenu() {
-        return viewMenu;
+    public static Menu getPreferencesMenu() {
+        return preferencesMenu;
     }
 }
