@@ -19,6 +19,8 @@ public class FindAndReplace extends Application {
     TextField replaceWithTextField;
     int startCol = 0;
     int startRow = 0;
+    int initCol = 0;
+    int initRow = 0;
 
     public static void main(String[] args) {
         launch(args);
@@ -106,14 +108,18 @@ public class FindAndReplace extends Application {
     }
 
     private void findNext() {
+        System.out.println("find next called");
 
         EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
         String findText = textToFindTextArea.getText();
 
+        if(startRow > initRow || (startRow == initRow && startCol > initCol)) {
+            return;
+        }
+
         if (startRow >= editor.getParagraphs().size()) {
             startRow = 0;
             startCol = 0;
-            return;
         }
 
         Paragraph paragraph = editor.getParagraph(startRow);
@@ -123,31 +129,39 @@ public class FindAndReplace extends Application {
              int startPos = editor.position(startRow, text.indexOf(findText, startCol)).toOffset();
              editor.selectRange(startPos, startPos+findText.length());
 
-             if (text.indexOf(findText, startCol) + findText.length() >= paragraph.getText().length()) {
+             initRow = startRow;
+             initCol = startCol;
+
+             if (text.indexOf(findText, startCol) + findText.length() >= paragraph.length()) {
                  startCol = 0;
                  startRow++;
              } else {
-                 startCol = text.indexOf(findText, startCol) + findText.length() + 1;
+                 startCol = text.indexOf(findText, startCol) + 1;
              }
         } else {
             startCol = 0;
             startRow += 1;
             findNext();
         }
+
+        System.out.println("find next quit");
     }
 
 
     private void findPrevious() {
+        System.out.println("find previous called");
 
         EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
         String findText = textToFindTextArea.getText();
+
+        if(startRow < initRow)
 
         if (startCol < 0 || startRow < 0) {
             startRow--;
 
             if (startRow < 0) {
                 startRow = editor.getParagraphs().size() - 1;
-                return;
+                // return;
             }
             startCol = editor.getParagraph(startRow).length()-1;
         }
@@ -165,6 +179,8 @@ public class FindAndReplace extends Application {
             if (startRow >= 0) startCol = editor.getParagraph(startRow).length()-1;
             findPrevious();
         }
+
+        System.out.println("find previous quit");
     }
 
 }
