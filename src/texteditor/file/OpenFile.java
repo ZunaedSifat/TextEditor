@@ -1,5 +1,7 @@
 package texteditor.file;
 
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -28,6 +30,22 @@ public class OpenFile {
     }
 
     public static void openFile(File file) {
+
+        String path = file.getAbsolutePath();
+        TabPane tabPane = CodeEditor.getTabPane();
+
+        for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+
+            String tabPath = ((EditorTab) tab.getContent()).getPath();
+
+            System.out.println(path);
+            System.out.println(tabPath);
+
+            if (path.equals(tabPath)) {
+                tabPane.getSelectionModel().select(tab);
+                return;
+            }
+        }
 
         StringBuffer stringBuffer = new StringBuffer("");
         if (file != null) {
