@@ -1,12 +1,10 @@
 package texteditor.file;
 
-import com.sun.org.apache.bcel.internal.classfile.Code;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.stage.Stage;
-import org.omg.CORBA.CODESET_INCOMPATIBLE;
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
 import texteditor.main.Main;
 

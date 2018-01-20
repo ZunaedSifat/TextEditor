@@ -2,10 +2,6 @@ package texteditor.preferences;
 
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import org.fxmisc.richtext.LineNumberFactory;
-import texteditor.edit.FindAndReplace;
-import texteditor.editor.EditorTab;
-import texteditor.main.CodeEditor;
 
 public class PreferenceMenu {
 

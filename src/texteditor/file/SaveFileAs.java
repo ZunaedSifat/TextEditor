@@ -3,7 +3,7 @@ package texteditor.file;
 import javafx.scene.control.Tab;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
 
 import java.io.*;
@@ -31,6 +31,9 @@ public class SaveFileAs {
                     tab.setText(file.getPath().split("/")[file.getPath().split("/").length-1]);
                     codeArea.setPath(file.getPath());
                     OpenRecent.add(file.getAbsolutePath());
+
+                    if (file.getPath().endsWith(".java"))
+                        codeArea.addSyntaxHighlighting();
 
                 } catch (Exception e) {
                     e.printStackTrace();

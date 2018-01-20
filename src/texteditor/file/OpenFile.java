@@ -5,7 +5,7 @@ import javafx.scene.control.TabPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
 
 import java.io.BufferedReader;

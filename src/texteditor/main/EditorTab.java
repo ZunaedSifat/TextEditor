@@ -1,4 +1,4 @@
-package texteditor.editor;
+package texteditor.main;
 
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
@@ -49,6 +49,10 @@ public class EditorTab extends CodeArea {
     public void addSyntaxHighlighting() {
 
         if (path == null) return;
+        if (path.endsWith(".java")) {
+            (new JavaKeywords()).start(this);
+            this.replaceText(0, 0, this.getText());
+        }
 
     }
 }

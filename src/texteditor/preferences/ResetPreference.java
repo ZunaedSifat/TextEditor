@@ -1,11 +1,5 @@
 package texteditor.preferences;
 
-import javafx.scene.control.Tab;
-import org.fxmisc.richtext.model.EditableStyledDocument;
-import texteditor.editor.EditorTab;
-import texteditor.main.CodeEditor;
-
-import javax.sound.sampled.Line;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;

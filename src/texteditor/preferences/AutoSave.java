@@ -1,7 +1,7 @@
 package texteditor.preferences;
 
 import javafx.scene.control.Tab;
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.file.SaveFile;
 import texteditor.main.CodeEditor;
 

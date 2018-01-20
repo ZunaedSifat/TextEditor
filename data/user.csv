@@ -1,8 +1,8 @@
 lineNumber:true
 wordWrap:true
 autoSave:false
-autoSaveDelay:3
-fontFace:Ubuntu Mono
-fontSize:13
+autoSaveDelay:300
+fontFace:Monaco
+fontSize:15
 boldFont:true
 italicFont:true

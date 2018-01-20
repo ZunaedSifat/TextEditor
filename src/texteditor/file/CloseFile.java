@@ -3,7 +3,7 @@ package texteditor.file;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Tab;
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
 
 import java.io.BufferedReader;

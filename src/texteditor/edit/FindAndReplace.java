@@ -10,7 +10,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import org.fxmisc.richtext.model.Paragraph;
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
 
 public class FindAndReplace extends Application {

@@ -2,12 +2,8 @@ package texteditor.preferences;
 
 import javafx.scene.control.Tab;
 import org.fxmisc.richtext.LineNumberFactory;
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 public class LineNumber {
 

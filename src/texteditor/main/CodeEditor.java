@@ -2,7 +2,6 @@ package texteditor.main;
 
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import texteditor.editor.EditorTab;
 import texteditor.file.CloseFile;
 
 public class CodeEditor {

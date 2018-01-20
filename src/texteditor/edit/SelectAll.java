@@ -1,6 +1,6 @@
 package texteditor.edit;
 
-import texteditor.editor.EditorTab;
+import texteditor.main.EditorTab;
 import texteditor.main.CodeEditor;
 
 public class SelectAll {
