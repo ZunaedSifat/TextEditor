@@ -28,9 +28,7 @@ public class HelpMenu {
         faq.setOnAction(e -> new OpenUrl(faqUrl));
 
         MenuItem checkForUpdates = new MenuItem("Check for Updates");
-        checkForUpdates.setOnAction(e -> {
-            /* todo: complete this */
-        });
+        checkForUpdates.setOnAction(e -> new CheckForUpdates());
 
         help.getItems().addAll(about, faq, new SeparatorMenuItem(),
                 githubRepo, checkForUpdates);
