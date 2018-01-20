@@ -1,8 +1,13 @@
 lineNumber:true
 wordWrap:true
 autoSave:true
-autoSaveDelay:300000
-fontFace:Ubuntu
+autoSaveDelay:5000
+fontFace:Ubuntu Mono
 fontSize:13
+<<<<<<< HEAD
 boldFont:false
 italicFont:false
+=======
+boldFont:true
+italicFont:true
+>>>>>>> feb56e469c6ea307dd9249d025c3cc980371d904

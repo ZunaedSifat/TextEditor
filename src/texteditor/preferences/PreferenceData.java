@@ -16,9 +16,6 @@ public class PreferenceData {
     private static boolean boldFont = true;
     private static boolean italicFont = true;
     private static boolean programClosed = false;
-    static {
-        readData();
-    }
 
     public static boolean isLineNumberEnabled() {
         return lineNumberEnabled;
@@ -152,6 +149,8 @@ public class PreferenceData {
             writer.write("fontSize:" + getFontSize() + "\n");
             writer.write("boldFont:" + isBoldFont() + "\n");
             writer.write("italicFont:" + isItalicFont() + "\n");
+
+            System.out.println("wrote data/user.csv");
         } catch (Exception e) {
             e.printStackTrace();
         }

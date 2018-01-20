@@ -3,7 +3,6 @@ package texteditor.file;
 import javafx.scene.control.Tab;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.fxmisc.richtext.CodeArea;
 import texteditor.editor.EditorTab;
 import texteditor.main.CodeEditor;
 
@@ -16,26 +15,29 @@ public class SaveFileAs {
         Tab tab = CodeEditor.getTabPane().getSelectionModel().getSelectedItem();
         EditorTab codeArea = (EditorTab) tab.getContent();
 
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Save File As");
-        File file = fileChooser.showSaveDialog(new Stage());
+        try {
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Save File As");
+            File file = fileChooser.showSaveDialog(new Stage());
 
-        System.out.println(file.getPath());
+            System.out.println(file.getPath());
 
-        if (file != null) {
+            if (file != null) {
 
-            try {
-                BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-                writer.write(codeArea.getText());
-                System.out.println(codeArea.getText());
-                writer.close();
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                    writer.write(codeArea.getText());
+                    System.out.println("saved: " + codeArea.getText());
 
-                tab.setText(file.getPath());
-                codeArea.setPath(file.getPath());
+                    tab.setText(file.getPath().split("/")[file.getPath().split("/").length-1]);
+                    codeArea.setPath(file.getPath());
+                    OpenRecent.add(file.getAbsolutePath());
 
-            } catch (Exception e) {
-                e.printStackTrace();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

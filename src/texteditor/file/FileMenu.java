@@ -1,12 +1,21 @@
 package texteditor.file;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.stage.Stage;
+import org.omg.CORBA.CODESET_INCOMPATIBLE;
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
+import texteditor.main.Main;
 
 public class FileMenu {
 
     private static Menu menu = new Menu("File");
+
+    public static MenuItem[] recents = new MenuItem[5];
+    public static Menu openRecent;
 
     static {
 
@@ -16,10 +25,7 @@ public class FileMenu {
         MenuItem openFile = new MenuItem("Open File");
         openFile.setOnAction(e -> OpenFile.openFile());
 
-        MenuItem openRecent = new MenuItem("Open Recent...");
-        openRecent.setOnAction(e -> {
-            //todo: add open recent actions
-        });
+        openRecent = new Menu("Open Recent...");
 
         MenuItem saveFile = new MenuItem("Save File");
         saveFile.setOnAction(e -> SaveFile.saveFile() );
@@ -33,14 +39,22 @@ public class FileMenu {
         MenuItem closeFile = new MenuItem("Close File");
         closeFile.setOnAction(e -> CloseFile.closeFile());
 
-        /* todo : implement GUI for showProperties */
         MenuItem fileProperties = new MenuItem("File Properties");
-        fileProperties.setOnAction(e -> Properties.showProperties());
+        fileProperties.setOnAction(e -> {
+
+            EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+            if (editor.getPath() != null) {
+                try {
+                    new Properties().start(new Stage());
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+
+        });
 
         MenuItem exitProgram = new MenuItem("Exit Program");
-        exitProgram.setOnAction(e -> {
-            // exit program
-        });
+        exitProgram.setOnAction(e -> Main.close());
 
         menu.getItems().addAll(newFile, new SeparatorMenuItem(),
                 openFile, openRecent, new SeparatorMenuItem(),
