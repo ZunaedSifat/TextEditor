@@ -34,6 +34,11 @@ public class CloseFile {
         }
 
         tab.getTabPane().getTabs().remove(tab);
+
+        // to save in recent files
+        EditorTab editorTab = (EditorTab) tab.getContent();
+        String fileName = (String) editorTab.getPath();
+        OpenRecent.add(fileName);
     }
 
     private static boolean isFileUpdated(Tab tab) {

@@ -3,18 +3,22 @@ package texteditor.help;
 import java.awt.Desktop;
 import java.net.URI;
 
-public class CheckForUpdates implements Runnable {
+public class OpenUrl implements Runnable {
 
-    private static String url;
+    private String url;
+    private Thread t;
 
-    static {
-        url = "http://rebornplusplus.wordpress.com/blog";
+    public OpenUrl(String url) {
+        this.url = url;
+        t = new Thread(this);
+        t.start();
     }
 
     @Override
     public void run() {
         if(Desktop.isDesktopSupported()) {
             try {
+                System.out.println("browser: " + url);
                 Desktop desktop = Desktop.getDesktop();
                 desktop.browse(new URI(url));
             } catch (Exception e) {

@@ -33,10 +33,9 @@ public class FileMenu {
         MenuItem closeFile = new MenuItem("Close File");
         closeFile.setOnAction(e -> CloseFile.closeFile());
 
+        /* todo : implement GUI for showProperties */
         MenuItem fileProperties = new MenuItem("File Properties");
-        fileProperties.setOnAction(e -> {
-
-        });
+        fileProperties.setOnAction(e -> Properties.showProperties());
 
         MenuItem exitProgram = new MenuItem("Exit Program");
         exitProgram.setOnAction(e -> {
