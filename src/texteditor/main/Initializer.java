@@ -8,10 +8,10 @@ public class Initializer {
 
     public static void initialize() {
 
-        Thread autoSave = new Thread(AutoSave.getObject());
-        autoSave.start();
-
         PreferenceData.readData();
         OpenRecent.readData();
+
+        Thread autoSave = new Thread(AutoSave.getObject());
+        autoSave.start();
     }
 }

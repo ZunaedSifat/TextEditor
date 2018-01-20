@@ -133,6 +133,7 @@ public class PreferenceData {
                     }
                 }
             }
+            System.out.println("AutoSaveEnabled : " + autoSaveEnabled);
         } catch (Exception e) {
             e.printStackTrace();
         }

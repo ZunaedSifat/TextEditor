@@ -3,4 +3,6 @@ wordWrap:true
 autoSave:true
 autoSaveDelay:300
 fontFace:Ubuntu Mono
-fontSize:13
+fontSize:1
+boldFont:false
+italicFont:false

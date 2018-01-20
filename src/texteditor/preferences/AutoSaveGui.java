@@ -23,24 +23,31 @@ public class AutoSaveGui extends Application {
         gridPane.setVgap(30);
         gridPane.setPadding(new Insets(10, 10, 10, 10));
 
-        Label delayLabel = new Label("Delay (s) :");
+        Label delayLabel = new Label("Set delay (s) :");
         GridPane.setConstraints(delayLabel, 0, 0);
 
-        TextField delayTextField = new TextField();
-        delayTextField.setPromptText("Enter delay time");
+        TextField delayTextField = new TextField(PreferenceData.getAutoSaveDelay() + "");
         GridPane.setConstraints(delayTextField, 1, 0);
 
-        Button closeButton = new Button("Close");
-        closeButton.setOnAction(e -> primaryStage.close());
+        Button closeButton = new Button("Cancel");
+        closeButton.setOnAction(e -> {
+            PreferenceData.setAutoSaveEnabled(false);
+            PreferenceMenu.getAutoSave().setSelected(false);
+            primaryStage.close();
+        });
         GridPane.setConstraints(closeButton, 0, 1);
 
-        Button toggleAutoSaveButton = new Button();
-        toggleAutoSaveButton.setText(PreferenceData.isAutoSaveEnabled() ? "Disable Auto Save" : "Enable Auto Save");
-        toggleAutoSaveButton.setOnAction(e -> PreferenceData.setAutoSaveEnabled(!PreferenceData.isAutoSaveEnabled()));
-        GridPane.setConstraints(toggleAutoSaveButton, 1, 1);
+        Button autoSaveButton = new Button();
+        autoSaveButton.setText("Enable Auto Save");
+        autoSaveButton.setOnAction(e -> {
+            PreferenceData.setAutoSaveEnabled(true);
+            PreferenceMenu.getAutoSave().setSelected(true);
+            primaryStage.close();
+        });
+        GridPane.setConstraints(autoSaveButton, 1, 1);
 
         gridPane.getChildren().addAll(delayLabel, delayTextField,
-                closeButton, toggleAutoSaveButton);
+                closeButton, autoSaveButton);
 
         Scene scene = new Scene(gridPane, 300, 100);
         primaryStage.setScene(scene);

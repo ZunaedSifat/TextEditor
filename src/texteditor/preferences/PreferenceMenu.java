@@ -10,14 +10,20 @@ import texteditor.main.CodeEditor;
 public class PreferenceMenu {
 
     private static Menu preferencesMenu  = new Menu("Preferences");
+    private static CheckMenuItem autoSave;
     static {
 
-        CheckMenuItem autoSave = new CheckMenuItem("Auto Save Files");
+        autoSave = new CheckMenuItem("Auto Save Files");
         autoSave.setOnAction(e -> {
-            try {
-                (new AutoSaveGui()).start(new Stage());
-            } catch (Exception ex) {
-                ex.printStackTrace();
+
+            if (autoSave.isSelected()) {
+                try {
+                    (new AutoSaveGui()).start(new Stage());
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            } else {
+                PreferenceData.setAutoSaveEnabled(false);
             }
         });
 
@@ -55,5 +61,9 @@ public class PreferenceMenu {
 
     public static Menu getPreferencesMenu() {
         return preferencesMenu;
+    }
+
+    public static CheckMenuItem getAutoSave() {
+        return autoSave;
     }
 }
