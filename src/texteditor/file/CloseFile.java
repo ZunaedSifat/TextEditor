@@ -20,28 +20,32 @@ public class CloseFile {
 
     public static void closeFile(Tab tab) {
 
-        if (!isFileUpdated(tab)) {
+        try {
+            if (!isFileUpdated(tab)) {
 
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("File Not Saved");
-            alert.setHeaderText("The file is not saved. All the recent changes will be discarded.");
-            alert.setContentText("Do you want to save file?");
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setTitle("File Not Saved");
+                alert.setHeaderText("The file is not saved. All the recent changes will be discarded.");
+                alert.setContentText("Do you want to save file?");
 
-            Optional<ButtonType> result = alert.showAndWait();
-            if (result.get() == ButtonType.OK){
-                SaveFile.saveFile(tab);
+                Optional<ButtonType> result = alert.showAndWait();
+                if (result.get() == ButtonType.OK){
+                    SaveFile.saveFile(tab);
+                }
             }
+
+            tab.getTabPane().getTabs().remove(tab);
+
+            // to save in recent files
+            EditorTab editorTab = (EditorTab) tab.getContent();
+            String fileName = (String) editorTab.getPath();
+            OpenRecent.add(fileName);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
-        tab.getTabPane().getTabs().remove(tab);
-
-        // to save in recent files
-        EditorTab editorTab = (EditorTab) tab.getContent();
-        String fileName = (String) editorTab.getPath();
-        OpenRecent.add(fileName);
     }
 
-    private static boolean isFileUpdated(Tab tab) {
+    public static boolean isFileUpdated(Tab tab) {
 
         EditorTab editorTab = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
         if (editorTab.getPath() == null) return false;
@@ -75,5 +79,17 @@ public class CloseFile {
         }
 
         return true;
+    }
+
+    public static void closeAll() {
+
+        try {
+            for (Tab tab : CodeEditor.getTabPane().getTabs())
+                closeFile(tab);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.exit(0);
     }
 }

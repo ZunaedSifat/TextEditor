@@ -22,13 +22,12 @@ public class AutoSave implements Runnable {
         while (true) {
             if (PreferenceData.isAutoSaveEnabled()) {
 
-                System.out.println("Came !!");
                 for (Tab tab : CodeEditor.getTabPane().getTabs()) {
 
                     EditorTab editor = (EditorTab) tab.getContent();
                     if (editor.getPath() != null) {
                         SaveFile.saveFile(tab);
-                        System.out.println("Auto Saving: " + editor.getPath());
+                        System.out.println("Automatically saved files: " + editor.getPath());
                     }
                 }
             }

@@ -2,8 +2,10 @@ package texteditor.main;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Tab;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import texteditor.file.CloseFile;
 import texteditor.file.OpenFile;
 import texteditor.file.OpenRecent;
 import texteditor.preferences.PreferenceData;
@@ -33,6 +35,6 @@ public class Main extends Application{
         PreferenceData.writeData();
         PreferenceData.setProgramClosed(true);
         OpenRecent.writeData();
-        System.exit(0);
+        CloseFile.closeAll();
     }
 }
