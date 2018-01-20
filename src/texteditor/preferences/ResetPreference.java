@@ -1,5 +1,11 @@
 package texteditor.preferences;
 
+import javafx.scene.control.Tab;
+import org.fxmisc.richtext.model.EditableStyledDocument;
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
+
+import javax.sound.sampled.Line;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -11,6 +17,7 @@ public class ResetPreference {
         String source = "./data/default.csv";
         String destination = "./data/user.csv";
 
+
         try {
             InputStream in = new FileInputStream(source);
             OutputStream out = new FileOutputStream(destination);
@@ -19,8 +26,15 @@ public class ResetPreference {
                 if (c == -1) break;
                 out.write(c);
             }
+
             in.close();
             out.close();
+
+            PreferenceData.readData();
+            LineNumber.lineNumber();
+            WordWrap.wordWrap();
+            Font.reset();
+
         } catch (Exception e) {
             System.out.println(e);
         }

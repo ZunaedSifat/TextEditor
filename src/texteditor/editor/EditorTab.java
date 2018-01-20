@@ -3,6 +3,7 @@ package texteditor.editor;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 import texteditor.main.CodeEditor;
+import texteditor.preferences.PreferenceData;
 
 public class EditorTab extends CodeArea {
 
@@ -17,6 +18,8 @@ public class EditorTab extends CodeArea {
         if (texteditor.preferences.PreferenceData.isWordWrapEnabled())
             setWrapText(true);
 
+        this.setStyle(PreferenceData.getFontStyle());
+
         this.path = path;
         this.addSyntaxHighlighting();
     }
@@ -28,6 +31,8 @@ public class EditorTab extends CodeArea {
             setParagraphGraphicFactory(LineNumberFactory.get(this));
         if (texteditor.preferences.PreferenceData.isWordWrapEnabled())
             setWrapText(true);
+
+        this.setStyle(PreferenceData.getFontStyle());
 
         this.path = path;
         this.addSyntaxHighlighting();

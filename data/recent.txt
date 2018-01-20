@@ -1,4 +1,1 @@
-/home/sifat/a.py
-/home/sifat/a.py
-/home/sifat/a.py
-/home/sifat/a.py
+/home/sifat/a.cpp

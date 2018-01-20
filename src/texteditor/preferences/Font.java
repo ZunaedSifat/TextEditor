@@ -11,10 +11,10 @@ import texteditor.main.CodeEditor;
 
 public class Font extends Application {
 
-    TextField fontFaceTextField;
-    TextField fontSizeTextField;
-    CheckBox italicCheckBox;
-    CheckBox boldCheckBox;
+    private static TextField fontFaceTextField;
+    private static TextField fontSizeTextField;
+    private static CheckBox italicCheckBox;
+    private static CheckBox boldCheckBox;
 
     public static void main(String[] args) {
         launch(args);
@@ -79,5 +79,15 @@ public class Font extends Application {
             EditorTab editor = (EditorTab) tab.getContent();
             editor.setStyle(PreferenceData.getFontStyle());
         }
+    }
+
+    public static void reset() {
+        for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+
+            EditorTab editor = (EditorTab) tab.getContent();
+            editor.setStyle(PreferenceData.getFontStyle());
+        }
+
+
     }
 }

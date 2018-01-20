@@ -23,7 +23,7 @@ public class AutoSaveGui extends Application {
         gridPane.setVgap(30);
         gridPane.setPadding(new Insets(10, 10, 10, 10));
 
-        Label delayLabel = new Label("Delay (ms) :");
+        Label delayLabel = new Label("Delay (s) :");
         GridPane.setConstraints(delayLabel, 0, 0);
 
         TextField delayTextField = new TextField();

@@ -67,6 +67,4 @@ public class OpenFile {
             System.out.println("Opened: " + file.getAbsoluteFile());
         }
     }
-
-
 }
