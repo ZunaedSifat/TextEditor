@@ -1,27 +1,30 @@
 package texteditor.file;
 
 import javafx.scene.control.MenuItem;
+import jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class OpenRecent {
 
-    private static String[] recentFiles = new String[5];
+    private static ArrayList<String> recentFiles = new ArrayList();
     private static String dataFile = "data/recent.txt";
 
     public static void add(String fileName) {
 
-        System.out.println("add called with: " + fileName);
+        if (fileName == null) return;
 
         for (String str : recentFiles)
             if (fileName.equals(str)) return;
 
-        for(int i=0; i<4; ++i) {
+        recentFiles.add("");
+        for(int i=0; i < recentFiles.size()-1; ++i) {
 
-            String filename = recentFiles[i];
-            recentFiles[i+1] = fileName;
+            String filename = recentFiles.get(i);
+            recentFiles.set(i+1, fileName);
         }
-        recentFiles[0] = fileName;
+        recentFiles.set(0, fileName);
 
         MenuItem menuItem = new MenuItem(fileName);
         menuItem.setOnAction(e -> OpenFile.openFile(new File(fileName)));
@@ -36,10 +39,7 @@ public class OpenRecent {
 
                 String filename = reader.readLine();
                 if (filename == null) return;
-                recentFiles[i] = filename;
-                MenuItem menuItem = new MenuItem(filename);
-                menuItem.setOnAction(e -> OpenFile.openFile(new File(filename)));
-                FileMenu.openRecent.getItems().add(menuItem);
+                OpenRecent.add(filename);
             }
 
         } catch (Exception e) {
@@ -54,6 +54,7 @@ public class OpenRecent {
             for (String filename : recentFiles) {
                 if (filename == null) return;
                 writer.write(filename + "\n");
+                System.out.println("wrote " + filename);
             }
         } catch (Exception e) {
             e.printStackTrace();

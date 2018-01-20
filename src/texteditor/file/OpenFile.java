@@ -16,11 +16,15 @@ public class OpenFile {
     public static void openFile() {
 
         // choose the file first
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open File");
-        File file = fileChooser.showOpenDialog(new Stage());
+        try {
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Open File");
+            File file = fileChooser.showOpenDialog(new Stage());
 
-        openFile(file);
+            openFile(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void openFile(File file) {

@@ -22,7 +22,7 @@ public class Properties extends Application {
         EditorTab editorTab = (EditorTab) tab.getContent();
         String filePath = editorTab.getPath();
 
-        System.out.println(filePath);
+        System.out.println("Properties call for : " + filePath);
 
         if (filePath == null) window.close();
 

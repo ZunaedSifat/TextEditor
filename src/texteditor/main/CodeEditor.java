@@ -37,7 +37,7 @@ public class CodeEditor {
 
     public static void addTab(String path, String text) {
 
-        String title = (path == null) ? "Untitled" : path;
+        String title = (path == null) ? "Untitled" : path.split("/")[path.split("/").length-1];
         Tab tab = new Tab(title);
         tab.setContent(new EditorTab(path, text));
         tab.setOnCloseRequest(e -> CloseFile.closeFile(tab));

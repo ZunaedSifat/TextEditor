@@ -1,8 +1,13 @@
 package texteditor.file;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.stage.Stage;
+import org.omg.CORBA.CODESET_INCOMPATIBLE;
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
 import texteditor.main.Main;
 
 public class FileMenu {
@@ -35,7 +40,18 @@ public class FileMenu {
         closeFile.setOnAction(e -> CloseFile.closeFile());
 
         MenuItem fileProperties = new MenuItem("File Properties");
-        fileProperties.setOnAction(e -> new Properties());
+        fileProperties.setOnAction(e -> {
+
+            EditorTab editor = (EditorTab) CodeEditor.getTabPane().getSelectionModel().getSelectedItem().getContent();
+            if (editor.getPath() != null) {
+                try {
+                    new Properties().start(new Stage());
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+
+        });
 
         MenuItem exitProgram = new MenuItem("Exit Program");
         exitProgram.setOnAction(e -> Main.close());
