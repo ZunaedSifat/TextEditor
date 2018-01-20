@@ -1,8 +1,11 @@
 package texteditor.help;
 
+import javafx.application.Platform;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+
+import java.time.chrono.ThaiBuddhistEra;
 
 public class HelpMenu {
 
@@ -28,7 +31,15 @@ public class HelpMenu {
         faq.setOnAction(e -> new OpenUrl(faqUrl));
 
         MenuItem checkForUpdates = new MenuItem("Check for Updates");
-        checkForUpdates.setOnAction(e -> new CheckForUpdates());
+        checkForUpdates.setOnAction(e -> {
+
+            Platform.runLater(
+                    () -> {
+                        Thread thread = new Thread(new CheckForUpdates());
+                        thread.start();
+                    }
+            );
+        });
 
         help.getItems().addAll(about, faq, new SeparatorMenuItem(),
                 githubRepo, checkForUpdates);
