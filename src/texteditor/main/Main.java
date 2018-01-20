@@ -3,12 +3,9 @@ package texteditor.main;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import texteditor.file.OpenFile;
 import texteditor.file.OpenRecent;
-import texteditor.file.SaveAllFiles;
-import texteditor.file.SaveFile;
-import texteditor.preferences.AutoSave;
 import texteditor.preferences.PreferenceData;
 
 public class Main extends Application{

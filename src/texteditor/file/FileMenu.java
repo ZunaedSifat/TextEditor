@@ -3,10 +3,14 @@ package texteditor.file;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import texteditor.main.Main;
 
 public class FileMenu {
 
     private static Menu menu = new Menu("File");
+
+    public static MenuItem[] recents = new MenuItem[5];
+    public static Menu openRecent;
 
     static {
 
@@ -16,10 +20,7 @@ public class FileMenu {
         MenuItem openFile = new MenuItem("Open File");
         openFile.setOnAction(e -> OpenFile.openFile());
 
-        MenuItem openRecent = new MenuItem("Open Recent...");
-        openRecent.setOnAction(e -> {
-            //todo: add open recent actions
-        });
+        openRecent = new Menu("Open Recent...");
 
         MenuItem saveFile = new MenuItem("Save File");
         saveFile.setOnAction(e -> SaveFile.saveFile() );
@@ -33,14 +34,11 @@ public class FileMenu {
         MenuItem closeFile = new MenuItem("Close File");
         closeFile.setOnAction(e -> CloseFile.closeFile());
 
-        /* todo : implement GUI for showProperties */
         MenuItem fileProperties = new MenuItem("File Properties");
-        fileProperties.setOnAction(e -> Properties.showProperties());
+        fileProperties.setOnAction(e -> new Properties());
 
         MenuItem exitProgram = new MenuItem("Exit Program");
-        exitProgram.setOnAction(e -> {
-            // exit program
-        });
+        exitProgram.setOnAction(e -> Main.close());
 
         menu.getItems().addAll(newFile, new SeparatorMenuItem(),
                 openFile, openRecent, new SeparatorMenuItem(),

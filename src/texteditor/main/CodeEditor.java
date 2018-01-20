@@ -27,7 +27,8 @@ public class CodeEditor {
         String title = (path == null) ? "Untitled" : path;
 
         Tab tab = new Tab(title);
-        tab.setContent(new EditorTab(path));
+        EditorTab editor = new EditorTab(path);
+        tab.setContent(editor);
         tab.setOnCloseRequest(e -> CloseFile.closeFile(tab));
 
         tabPane.getTabs().add(tab);

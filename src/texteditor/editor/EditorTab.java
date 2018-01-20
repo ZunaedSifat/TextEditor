@@ -2,6 +2,7 @@ package texteditor.editor;
 
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
+import texteditor.main.CodeEditor;
 
 public class EditorTab extends CodeArea {
 

@@ -20,28 +20,31 @@ public class OpenFile {
         fileChooser.setTitle("Open File");
         File file = fileChooser.showOpenDialog(new Stage());
 
+        openFile(file);
+    }
+
+    public static void openFile(File file) {
+
         StringBuffer stringBuffer = new StringBuffer("");
         if (file != null) {
 
-            try {
-
-                BufferedReader reader = new BufferedReader(new FileReader(file));
+            try (BufferedReader reader = new BufferedReader(new FileReader(file))){
                 while (true) {
                     String str = reader.readLine();
                     if (str == null) break;
                     stringBuffer.append(str + "\n");
                 }
 
-                reader.close();
-
                 CodeEditor.addTab(file.getPath(), stringBuffer.toString());
+                OpenRecent.add(file.getAbsolutePath());
 
             } catch (IOException e) {
-
                 e.printStackTrace();
             }
 
-            System.out.println(file.getAbsoluteFile());
-       }
+            System.out.println("Opened: " + file.getAbsoluteFile());
+        }
     }
+
+
 }
