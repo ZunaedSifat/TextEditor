@@ -18,7 +18,6 @@ public class AutoSave implements Runnable {
     public void run() {
 
         while (!PreferenceData.isProgramClosed()) {
-            System.out.println("autosave: " + 1);
 
             if (PreferenceData.isAutoSaveEnabled()) {
 
@@ -28,16 +27,12 @@ public class AutoSave implements Runnable {
                     if (editor.getPath() != null)
                         SaveFile.saveFile(tab);
 
-                    System.out.println(editor.getPath());
+                    System.out.println("Saving: " + editor.getPath());
                 }
             }
 
             try {
-
-                System.out.println("sleep: " + 1);
                 Thread.sleep(PreferenceData.getAutoSaveDelay());
-                System.out.println(PreferenceData.getAutoSaveDelay());
-                System.out.println("sleep: " + 1000);
             } catch ( Exception e) {
                 e.printStackTrace();
             }
