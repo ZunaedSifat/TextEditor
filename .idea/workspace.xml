@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSaveGui.class" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/About.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/FAQ.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/GitHubRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/texteditor/help/About.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/texteditor/help/FAQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/texteditor/help/GitHubRepository.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/CloseFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/CloseFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/FileMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/FileMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/OpenRecent.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/OpenRecent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/Properties.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/Properties.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/CheckForUpdates.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/CheckForUpdates.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/HelpMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/HelpMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSave.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSave.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" afterPath="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/file/Properties.java" afterPath="$PROJECT_DIR$/src/texteditor/file/Properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java" afterPath="$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/texteditor/preferences/Font.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/Font.java" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -85,8 +61,8 @@
       <file leaf-file-name="OpenUrl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/texteditor/help/OpenUrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="291">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -613,12 +589,12 @@
       <workItem from="1516354481831" duration="3787000" />
       <workItem from="1516359759583" duration="3107000" />
       <workItem from="1516384133352" duration="4175000" />
-      <workItem from="1516435982588" duration="253000" />
+      <workItem from="1516435982588" duration="461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119536000" />
+    <option name="totallyTimeSpent" value="119744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1315" height="744" extended-state="6" />
@@ -874,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/help/OpenUrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="291">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
