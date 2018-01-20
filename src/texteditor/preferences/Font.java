@@ -1,9 +1,5 @@
 package texteditor.preferences;
 
-<<<<<<< HEAD
-public class Font {
-
-=======
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -84,5 +80,4 @@ public class Font extends Application {
             editor.setStyle(PreferenceData.getFontStyle());
         }
     }
->>>>>>> 1f22e05bd81837dfef039b86f7d629662b2662de
 }

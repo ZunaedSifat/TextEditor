@@ -1,8 +1,8 @@
-lineNumber:true
+lineNumber:false
 wordWrap:true
 autoSave:true
 autoSaveDelay:180000
 fontFace:Consolas
-fontSize:20
-boldFont:true
-italicFont:true
+fontSize:14
+boldFont:false
+italicFont:false
