@@ -1,79 +1,59 @@
 package texteditor.preferences;
 
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 import org.fxmisc.richtext.LineNumberFactory;
+import texteditor.edit.FindAndReplace;
 import texteditor.editor.EditorTab;
 import texteditor.main.CodeEditor;
 
 public class PreferenceMenu {
 
-    private static Menu viewMenu  = new Menu("Preferences");
+    private static Menu preferencesMenu  = new Menu("Preferences");
     static {
 
         CheckMenuItem autoSave = new CheckMenuItem("Auto Save Files");
         autoSave.setOnAction(e -> {
-
-            //todo: implement a thread to save files every (30s/1m/2m/5m)
-
-        });
-
-        CheckMenuItem showFileExplorer = new CheckMenuItem("Show File Explorer");
-        showFileExplorer.setOnAction(e -> {
-
+            try {
+                (new AutoSaveGui()).start(new Stage());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         });
 
         CheckMenuItem wordWrap = new CheckMenuItem("Word Wrap");
-        wordWrap.setSelected(WordWrap.isWordWrapEnabled());
+        wordWrap.setSelected(PreferenceData.isWordWrapEnabled());
         wordWrap.setOnAction(e -> {
-
-            for (Tab tab : CodeEditor.getTabPane().getTabs()) {
-
-                EditorTab editorTab = (EditorTab) tab.getContent();
-                editorTab.setWrapText(wordWrap.isSelected());
-            }
+            PreferenceData.setWordWrapEnabled(wordWrap.isSelected());
+            WordWrap.wordWrap();
         });
 
         CheckMenuItem showLineNumber = new CheckMenuItem("Show Line Number");
-        showLineNumber.setSelected(LineNumber.isLineNumberEnabled());
+        showLineNumber.setSelected(PreferenceData.isLineNumberEnabled());
         showLineNumber.setOnAction(e -> {
-
-            for (Tab tab : CodeEditor.getTabPane().getTabs()) {
-
-                EditorTab editorTab = (EditorTab) tab.getContent();
-                if (!showLineNumber.isSelected())
-                    editorTab.setParagraphGraphicFactory(null);
-                else
-                    editorTab.setParagraphGraphicFactory(LineNumberFactory.get(editorTab));
-            }
+            PreferenceData.setLineNumberEnabled(showLineNumber.isSelected());
+            LineNumber.lineNumber();
         });
 
         MenuItem font = new MenuItem("Font");
         font.setOnAction(e -> {
-
+            try {
+                (new Font()).start(new Stage());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         });
 
-        ToggleGroup theme = new ToggleGroup();
+        MenuItem resetPreferences = new MenuItem("Reset Preferences");
+        resetPreferences.setOnAction(e -> ResetPreference.resetPreference());
 
-        RadioMenuItem darkTheme = new RadioMenuItem("Dark Theme");
-        darkTheme.setOnAction(e -> {
-
-        });
-
-        RadioMenuItem lightTheme = new RadioMenuItem("Light Theme");
-        lightTheme.setOnAction(e -> {
-
-        });
-
-        darkTheme.setToggleGroup(theme);
-        lightTheme.setToggleGroup(theme);
-
-        viewMenu.getItems().addAll(showFileExplorer, new SeparatorMenuItem(),
+        preferencesMenu.getItems().addAll(autoSave, new SeparatorMenuItem(),
                 wordWrap, showLineNumber, new SeparatorMenuItem(),
                 font, new SeparatorMenuItem(),
-                lightTheme, darkTheme);
+                resetPreferences );
     }
 
-    public static Menu getViewMenu() {
-        return viewMenu;
+    public static Menu getPreferencesMenu() {
+        return preferencesMenu;
     }
 }

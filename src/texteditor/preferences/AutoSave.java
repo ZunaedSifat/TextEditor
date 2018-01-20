@@ -7,46 +7,40 @@ import texteditor.main.CodeEditor;
 
 public class AutoSave implements Runnable {
 
-    private boolean autosaveOn;
     private static AutoSave object;
-    private int delay;
-
-    private AutoSave() {
-
-        autosaveOn = false;
-        //todo: read from file
+    private AutoSave() { }
+    public static AutoSave getObject() {
+        if (object == null) object = new AutoSave();
+        return object;
     }
 
     @Override
     public void run() {
 
-        if (autosaveOn) {
+        while (!PreferenceData.isProgramClosed()) {
+            System.out.println("autosave: " + 1);
 
-            for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+            if (PreferenceData.isAutoSaveEnabled()) {
 
-                EditorTab editor = (EditorTab) tab.getContent();
-                if (editor.getPath() != null)
-                    SaveFile.saveFile(tab);
+                for (Tab tab : CodeEditor.getTabPane().getTabs()) {
+
+                    EditorTab editor = (EditorTab) tab.getContent();
+                    if (editor.getPath() != null)
+                        SaveFile.saveFile(tab);
+
+                    System.out.println(editor.getPath());
+                }
+            }
+
+            try {
+
+                System.out.println("sleep: " + 1);
+                Thread.sleep(PreferenceData.getAutoSaveDelay());
+                System.out.println(PreferenceData.getAutoSaveDelay());
+                System.out.println("sleep: " + 1000);
+            } catch ( Exception e) {
+                e.printStackTrace();
             }
         }
-
-        try {
-            Thread.sleep(delay);
-        } catch ( Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void autoSaveEnable(int delay) {
-
-        if (object == null) object = new AutoSave();
-        object.delay = delay;
-        object.autosaveOn = true;
-    }
-
-    public void setAutosaveDisable() {
-
-        if (object == null) object = new AutoSave();
-        object.autosaveOn = false;
     }
 }

@@ -11,9 +11,9 @@ public class EditorTab extends CodeArea {
 
         super();
 
-        if (texteditor.preferences.LineNumber.isLineNumberEnabled())
+        if (texteditor.preferences.PreferenceData.isLineNumberEnabled())
             setParagraphGraphicFactory(LineNumberFactory.get(this));
-        if (texteditor.preferences.WordWrap.isWordWrapEnabled())
+        if (texteditor.preferences.PreferenceData.isWordWrapEnabled())
             setWrapText(true);
 
         this.path = path;
@@ -23,9 +23,9 @@ public class EditorTab extends CodeArea {
     public EditorTab(String path, String text) {
 
         super(text);
-        if (texteditor.preferences.LineNumber.isLineNumberEnabled())
+        if (texteditor.preferences.PreferenceData.isLineNumberEnabled())
             setParagraphGraphicFactory(LineNumberFactory.get(this));
-        if (texteditor.preferences.WordWrap.isWordWrapEnabled())
+        if (texteditor.preferences.PreferenceData.isWordWrapEnabled())
             setWrapText(true);
 
         this.path = path;

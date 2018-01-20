@@ -1,41 +1,25 @@
 package texteditor.preferences;
 
+import javafx.scene.control.Tab;
+import org.fxmisc.richtext.LineNumberFactory;
+import texteditor.editor.EditorTab;
+import texteditor.main.CodeEditor;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class LineNumber {
 
-    private static boolean lineNumberEnabled = true;
-    static {
-        try {
-            BufferedReader reader = new BufferedReader( new FileReader("data/user.csv"));
+    public static void lineNumber() {
 
-            while (true) {
+        for (Tab tab : CodeEditor.getTabPane().getTabs()) {
 
-                String line = reader.readLine();
-                if (line == null) break;
-
-                if (line.startsWith("view.lineNumber") && line.endsWith("false"))
-                    lineNumberEnabled = false;
-            }
-            reader.close();
-
-        } catch (FileNotFoundException e) {
-
-            e.printStackTrace();
-
-        } catch (Exception e) {
-            e.printStackTrace();
+            EditorTab editorTab = (EditorTab) tab.getContent();
+            if (!PreferenceData.isLineNumberEnabled())
+                editorTab.setParagraphGraphicFactory(null);
+            else
+                editorTab.setParagraphGraphicFactory(LineNumberFactory.get(editorTab));
         }
-    }
-
-    public static boolean isLineNumberEnabled() {
-        return lineNumberEnabled;
-    }
-
-    public static void setLineNumberEnabled(boolean value) {
-        lineNumberEnabled = value;
-        //todo: write in file
     }
 }

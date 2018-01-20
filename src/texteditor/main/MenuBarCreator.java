@@ -11,7 +11,7 @@ public class MenuBarCreator {
 
         menuBar.getMenus().addAll(texteditor.file.FileMenu.getMenu(),
                 texteditor.edit.EditMenu.getEditMenu(),
-                texteditor.preferences.PreferenceMenu.getViewMenu(),
+                texteditor.preferences.PreferenceMenu.getPreferencesMenu(),
                 texteditor.help.HelpMenu.getHelp());
     }
 
