@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.scene.input.KeyCodeCombination;
 
 import java.time.chrono.ThaiBuddhistEra;
 
@@ -17,12 +18,13 @@ public class HelpMenu {
     static {
 
         help = new Menu("_Help");
-        aboutUrl = "http://rebornplusplus.wordpress.com/about";
+        aboutUrl = "https://github.com/ZunaedSifat/TextEditor/blob/master/README.md";
         faqUrl = "http://rebornplusplus.wordpress.com/faq";
         githubRepoUrl = "http://github.com/ZunaedSifat/TextEditor";
 
         MenuItem about = new MenuItem("About");
         about.setOnAction(e -> new OpenUrl(aboutUrl));
+        about.setAccelerator(KeyCodeCombination.keyCombination("F1"));
 
         MenuItem githubRepo = new MenuItem("Github Repository");
         githubRepo.setOnAction(e -> new OpenUrl(githubRepoUrl));

@@ -35,6 +35,12 @@ public class Main extends Application{
         PreferenceData.writeData();
         PreferenceData.setProgramClosed(true);
         OpenRecent.writeData();
-        CloseFile.closeAll();
+        try {
+            CloseFile.closeAll();
+        } catch (Exception e) {
+
+        }
+
+        System.exit(0);
     }
 }

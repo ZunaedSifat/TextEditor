@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 
 public class PreferenceMenu {
 
-    private static Menu preferencesMenu  = new Menu("Preferences");
+    private static Menu preferencesMenu  = new Menu("_Preferences");
     private static CheckMenuItem autoSave;
     static {
 

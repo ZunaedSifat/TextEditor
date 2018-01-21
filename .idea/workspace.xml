@@ -2,44 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/EditorTab.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/JavaKeywords.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data/recent.txt" afterPath="$PROJECT_DIR$/data/recent.txt" />
-      <change beforePath="$PROJECT_DIR$/data/user.csv" afterPath="$PROJECT_DIR$/data/user.csv" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/FindAndReplace.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/FindAndReplace.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/SelectAll.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/SelectAll.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/editor/EditorTab.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/CloseFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/CloseFile.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/test/HyperlinkTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/EditMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/edit/EditMenu.class" />
       <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/FileMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/FileMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/OpenFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/OpenFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/Properties.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/Properties.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFile.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFileAs.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/file/SaveFileAs.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/CodeEditor.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/CodeEditor.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSave.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/AutoSave.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/Font.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/Font.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/LineNumber.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/LineNumber.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/HelpMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/help/HelpMenu.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/EditorTab.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/EditorTab.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/JavaKeywords.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/JavaKeywords.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/Main.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/main/Main.class" />
       <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/PreferenceMenu.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/PreferenceMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/ResetPreference.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/ResetPreference.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/WordWrap.class" afterPath="$PROJECT_DIR$/out/production/TextEditor/texteditor/preferences/WordWrap.class" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java" afterPath="$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/edit/SelectAll.java" afterPath="$PROJECT_DIR$/src/texteditor/edit/SelectAll.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" afterPath="$PROJECT_DIR$/src/texteditor/main/EditorTab.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/HyperlinkTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/edit/EditMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/edit/EditMenu.java" />
       <change beforePath="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/Properties.java" afterPath="$PROJECT_DIR$/src/texteditor/file/Properties.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/SaveFile.java" afterPath="$PROJECT_DIR$/src/texteditor/file/SaveFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java" afterPath="$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/main/CodeEditor.java" afterPath="$PROJECT_DIR$/src/texteditor/main/CodeEditor.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/AutoSave.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/AutoSave.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/Font.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/Font.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/LineNumber.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/LineNumber.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java" afterPath="$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/main/EditorTab.java" afterPath="$PROJECT_DIR$/src/texteditor/main/EditorTab.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java" afterPath="$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java" />
+      <change beforePath="$PROJECT_DIR$/src/texteditor/main/Main.java" afterPath="$PROJECT_DIR$/src/texteditor/main/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/ResetPreference.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/ResetPreference.java" />
-      <change beforePath="$PROJECT_DIR$/src/texteditor/preferences/WordWrap.java" afterPath="$PROJECT_DIR$/src/texteditor/preferences/WordWrap.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,18 +80,58 @@
       <file leaf-file-name="EditMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/edit/EditMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="114">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditorTab.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/texteditor/main/EditorTab.java">
+      <file leaf-file-name="PreferenceMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="114">
+              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckForUpdates.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelpMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/help/HelpMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="20" column="83" lean-forward="false" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -120,8 +140,8 @@
       <file leaf-file-name="SaveFileAs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+            <state relative-caret-position="684">
+              <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -130,8 +150,8 @@
       <file leaf-file-name="CodeEditor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/main/CodeEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="19">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,11 +160,9 @@
       <file leaf-file-name="JavaKeywords.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,6 +182,9 @@
       <find>String</find>
       <find>==</find>
       <find>!=</find>
+      <find>print</find>
+      <find>recent</find>
+      <find>prints</find>
     </findStrings>
     <replaceStrings>
       <replace>url</replace>
@@ -204,11 +225,9 @@
         <option value="$PROJECT_DIR$/src/texteditor/edit/Replace.java" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/ViewMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/edit/FindAndReplace.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/edit/EditMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/SaveAllFiles.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/OpenRecent.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/Properties.java" />
         <option value="$PROJECT_DIR$/src/texteditor/help/About.java" />
         <option value="$PROJECT_DIR$/src/texteditor/help/FAQ.java" />
@@ -218,24 +237,26 @@
         <option value="$PROJECT_DIR$/data/updates" />
         <option value="$PROJECT_DIR$/data/updatedFile.txt" />
         <option value="$PROJECT_DIR$/src/texteditor/help/UpdateCheckerThread.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/OpenFile.java" />
         <option value="$PROJECT_DIR$/src/texteditor/editor/EditorTab.java" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/Font.java" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/ResetPreference.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/AutoSaveGui.java" />
         <option value="$PROJECT_DIR$/data/default.csv" />
         <option value="$PROJECT_DIR$/data/user.csv" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/PreferenceData.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/Initializer.java" />
         <option value="$PROJECT_DIR$/src/texteditor/preferences/AutoSave.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/main/Main.java" />
         <option value="$PROJECT_DIR$/src/texteditor/file/CloseFile.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java" />
-        <option value="$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java" />
         <option value="$PROJECT_DIR$/src/texteditor/main/EditorTab.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/help/HelpMenu.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/file/FileMenu.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/edit/EditMenu.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java" />
       </list>
     </option>
   </component>
@@ -273,10 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,13 +316,14 @@
               <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="edit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
@@ -318,12 +337,40 @@
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="help" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="preferences" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="texteditor" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="texteditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -631,12 +678,13 @@
       <workItem from="1516462355121" duration="276000" />
       <workItem from="1516463210793" duration="26000" />
       <workItem from="1516469374864" duration="9209000" />
-      <workItem from="1516478729261" duration="3729000" />
+      <workItem from="1516478729261" duration="5078000" />
+      <workItem from="1516498629378" duration="2661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143980000" />
+    <option name="totallyTimeSpent" value="147990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1315" height="780" extended-state="6" />
@@ -644,7 +692,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258595" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -694,7 +742,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258595" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -703,7 +751,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28699553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34828103" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16831683" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16831683" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -809,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/main/MenuBarCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -829,20 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/help/HelpMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -892,22 +918,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-          <folding>
-            <element signature="e#2039#2040#0" expanded="false" />
-            <element signature="e#2070#2071#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/user.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,14 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/file/CloseFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -965,7 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,15 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/edit/EditMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,17 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,26 +1025,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/main/CodeEditor.java">
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="684">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texteditor/file/SaveFileAs.java">
+    <entry file="file://$PROJECT_DIR$/src/texteditor/main/CodeEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        <state relative-caret-position="19">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/main/JavaKeywords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/texteditor/main/EditorTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="-255">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#1083#1084#0" expanded="false" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1150#1151#0" expanded="false" />
+            <element signature="e#1182#1183#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/help/HelpMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="83" lean-forward="false" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/file/FileMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/edit/EditMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/preferences/PreferenceMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/texteditor/help/CheckForUpdates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
         </state>
       </provider>

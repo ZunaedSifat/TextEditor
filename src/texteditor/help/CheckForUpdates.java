@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class CheckForUpdates implements Runnable {
 
-    private enum State { CHECKING, FOUND, NOT_FOUND, OPENING, CLOSING}
+    private enum State { CHECKING, FOUND, NOT_FOUND, OPENING, CLOSING }
     private State state;
     private String downloadUrl;
 
