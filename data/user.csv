@@ -1,8 +1,8 @@
 lineNumber:true
 wordWrap:true
-autoSave:false
+autoSave:true
 autoSaveDelay:300
-fontFace:Monaco
+fontFace:Arial
 fontSize:15
 boldFont:true
 italicFont:true

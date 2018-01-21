@@ -1,12 +1,9 @@
 package texteditor.help;
 
-import javafx.application.Platform;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.input.KeyCodeCombination;
-
-import java.time.chrono.ThaiBuddhistEra;
 
 public class HelpMenu {
 
@@ -32,7 +29,7 @@ public class HelpMenu {
         MenuItem faq = new MenuItem("FAQ");
         faq.setOnAction(e -> new OpenUrl(faqUrl));
 
-        MenuItem checkForUpdates = new MenuItem("Check for Updates");
+        /*MenuItem checkForUpdates = new MenuItem("Check for Updates");
         checkForUpdates.setOnAction(e -> {
 
             Platform.runLater(
@@ -42,9 +39,10 @@ public class HelpMenu {
                     }
             );
         });
+        */
 
         help.getItems().addAll(about, faq, new SeparatorMenuItem(),
-                githubRepo, checkForUpdates);
+                githubRepo);
     }
 
     public static Menu getHelp() {

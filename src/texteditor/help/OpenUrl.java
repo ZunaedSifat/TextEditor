@@ -18,7 +18,7 @@ public class OpenUrl implements Runnable {
     public void run() {
         if(Desktop.isDesktopSupported()) {
             try {
-                System.out.println("browser: " + url);
+                System.out.println("opened in browser: " + url);
                 Desktop desktop = Desktop.getDesktop();
                 desktop.browse(new URI(url));
             } catch (Exception e) {
