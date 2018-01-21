@@ -17,7 +17,7 @@ public class SaveFileAs {
 
         try {
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Save File As");
+            fileChooser.setTitle("Save \"" + tab.getText() + "\" As");
             File file = fileChooser.showSaveDialog(new Stage());
 
             System.out.println(file.getPath());
@@ -36,11 +36,11 @@ public class SaveFileAs {
                         codeArea.addSyntaxHighlighting();
 
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    //e.printStackTrace();
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
     }
 }

@@ -24,7 +24,7 @@ public class CloseFile {
             if (!isFileUpdated(tab)) {
 
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("File Not Saved");
+                alert.setTitle( tab.getText() + " Has Changed");
                 alert.setHeaderText("The file is not saved. All the recent changes will be discarded.");
                 alert.setContentText("Do you want to save file?");
 
@@ -55,8 +55,7 @@ public class CloseFile {
             currentText = currentText + "\n";
 
         StringBuffer savedText = new StringBuffer("");
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(((EditorTab) tab.getContent()).getPath()));
+        try (BufferedReader reader = new BufferedReader(new FileReader(((EditorTab) tab.getContent()).getPath()))){
 
             while (true) {
 
@@ -64,10 +63,9 @@ public class CloseFile {
                 if (line == null) break;
                 savedText.append(line + "\n");
             }
-            reader.close();
 
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
         for (int i = 0; i < Math.max(savedText.length(), currentText.length()); i++) {
@@ -85,11 +83,10 @@ public class CloseFile {
 
         try {
             for (Tab tab : CodeEditor.getTabPane().getTabs())
-                closeFile(tab);
+                if (!isFileUpdated(tab))
+                    SaveFile.saveFile(tab);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        System.exit(0);
     }
 }
